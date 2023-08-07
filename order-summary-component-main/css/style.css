@@ -27,11 +27,11 @@ body {
       justify-content: center; } }
 
 .container {
-  min-width: 144rem;
-  min-height: 90rem;
+  min-width: 100vw;
+  min-height: 100vh;
   background-image: url(../img/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-size: 100% 44%;
   background-color: #e0e8ff;
   display: flex;
   align-items: center;
@@ -138,7 +138,7 @@ body {
   border: none;
   border-radius: 1.1rem;
   cursor: pointer;
-  box-shadow: 0 0.5rem 2rem rgba(35, 31, 32, 0.5);
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
   transition: all .2s; }
   .btn:hover {
     background-color: #766CF1; }
