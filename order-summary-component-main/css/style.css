@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 375px) {
+    body {
+      width: 37.5rem;
+      height: 70.9rem;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+
+.container {
+  min-width: 144rem;
+  min-height: 90rem;
+  background-image: url(../img/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #e0e8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 375px) {
+    .container {
+      background-image: url(../img/pattern-background-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #e0e8ff; } }
+
+.card {
+  background-color: #fff;
+  height: 69.7rem;
+  width: 45rem;
+  border-radius: 2rem;
+  overflow: hidden; }
+  @media only screen and (max-width: 375px) {
+    .card {
+      max-width: 32.7rem;
+      max-height: 56.7rem; } }
+  .card__img {
+    width: 100%; }
+  .card__content {
+    padding: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+    align-items: center; }
+    @media only screen and (max-width: 375px) {
+      .card__content {
+        gap: 2.4rem;
+        padding: 2.4rem; } }
+    .card__content-cost {
+      padding: 2.5rem;
+      width: 35.4rem;
+      height: 9.8rem;
+      background-color: #f5f7ff;
+      border-radius: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      @media only screen and (max-width: 375px) {
+        .card__content-cost {
+          width: 27.9rem;
+          height: 8.1rem; } }
+  .card__pricing {
+    margin-left: -8rem;
+    line-height: 2.5rem; }
+    @media only screen and (max-width: 375px) {
+      .card__pricing {
+        margin-left: -2rem; } }
+
+.card__header-1 {
+  font-size: 2.8rem;
+  font-weight: 900; }
+  @media only screen and (max-width: 375px) {
+    .card__header-1 {
+      font-size: 2.2rem; } }
+
+.card__text {
+  color: #7280a7;
+  text-align: center;
+  display: block;
+  font-size: 1.6rem; }
+
+.card__header-2 {
+  font-size: 1.6rem;
+  font-weight: 700; }
+  @media only screen and (max-width: 375px) {
+    .card__header-2 {
+      font-size: 1.4rem; } }
+
+.card__price {
+  color: #7280a7; }
+
+.card__content-link {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #3829e0; }
+  @media only screen and (max-width: 375px) {
+    .card__content-link {
+      font-size: 1.3rem; } }
+  .card__content-link:visited {
+    color: inherit; }
+  .card__content-link:hover {
+    text-decoration: none;
+    color: #766CF1; }
+
+.card__cancel {
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 700; }
+  .card__cancel:hover {
+    color: black;
+    font-weight: 700; }
+
+.btn {
+  color: #fff;
+  font-weight: 900;
+  background-color: #3829e0;
+  width: 35.4rem;
+  height: 5rem;
+  border: none;
+  border-radius: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 2rem rgba(35, 31, 32, 0.5);
+  transition: all .2s; }
+  .btn:hover {
+    background-color: #766CF1; }
+  .btn:active {
+    background-color: #766CF1;
+    transform: translateY(0.2em); }
+  @media only screen and (max-width: 375px) {
+    .btn {
+      width: 27.9rem;
+      height: 5rem;
+      font-size: 1.5rem; } }
