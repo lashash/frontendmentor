@@ -5,6 +5,8 @@ $Very-dark-blue-card: hsl(216, 50%, 16%);
 $Very-dark-blue-line: hsl(215, 32%, 27%);
 $white: hsl(0, 0%, 100%);
 
+$bp-small: 25em;
+
 
 *,
 *::before,
@@ -45,7 +47,7 @@ body {
     flex-direction: column;    
     gap: 2.4rem; 
    
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: $bp-small) {
         width: 32.7rem;
         height: 54.3rem;
     }
@@ -59,7 +61,7 @@ body {
        overflow: hidden;
        cursor: pointer;
 
-       @media only screen and (max-width: 375px) {
+       @media only screen and (max-width: $bp-small) {
         height: 27.8rem;
         
     }
@@ -67,7 +69,7 @@ body {
      
        
        &:hover &--hover {
-        opacity: 50.3%;
+        opacity: 1;
        }
 
         &-main{            
@@ -77,10 +79,10 @@ body {
         }       
 
         &--hover {  
-            // position: absolute;          
+            position: absolute;          
             width: 100%;
             height: 100%;
-            background-color: $Cyan;
+            background-color: rgba($Cyan, .53);
             border-radius: .8rem; 
             display: flex;
             align-items: center;

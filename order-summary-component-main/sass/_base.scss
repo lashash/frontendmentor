@@ -4,7 +4,7 @@ $Very-pale-blue: hsl(225, 100%, 98%);
 $Desaturated-blue: hsl(224, 23%, 55%);
 $Dark-blue: hsl(223, 47%, 23%);
 
-$bp-small: 375px;
+$bp-small: 25em;
 
 *,
 *::before,
@@ -31,8 +31,7 @@ body {
     @media only screen and (max-width: $bp-small) {
         width: 37.5rem;
         height: 70.9rem;
-        font-size: 1.5rem; 
-
+        font-size: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center; 
@@ -43,7 +42,7 @@ body {
 
 .container {       
     min-width: 144rem;  
-    min-height: 90rem; 
+    min-height: 90rem;    
     background-image: url(../img/pattern-background-desktop.svg);
     background-repeat: no-repeat;    
     background-position: top;

@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 25em) {
     body {
       width: 37.5rem;
       height: 70.9rem;
@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 25em) {
     .container {
       background-image: url(../img/pattern-background-mobile.svg);
       background-repeat: no-repeat;
@@ -49,7 +49,7 @@ body {
   width: 45rem;
   border-radius: 2rem;
   overflow: hidden; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 25em) {
     .card {
       max-width: 32.7rem;
       max-height: 56.7rem; } }
@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     gap: 2.9rem;
     align-items: center; }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 25em) {
       .card__content {
         gap: 2.4rem;
         padding: 2.4rem; } }
@@ -74,21 +74,21 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 25em) {
         .card__content-cost {
           width: 27.9rem;
           height: 8.1rem; } }
   .card__pricing {
     margin-left: -8rem;
     line-height: 2.5rem; }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 25em) {
       .card__pricing {
         margin-left: -2rem; } }
 
 .card__header-1 {
   font-size: 2.8rem;
   font-weight: 900; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 25em) {
     .card__header-1 {
       font-size: 2.2rem; } }
 
@@ -101,7 +101,7 @@ body {
 .card__header-2 {
   font-size: 1.6rem;
   font-weight: 700; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 25em) {
     .card__header-2 {
       font-size: 1.4rem; } }
 
@@ -112,7 +112,7 @@ body {
   font-size: 1.4rem;
   font-weight: 700;
   color: #3829e0; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 25em) {
     .card__content-link {
       font-size: 1.3rem; } }
   .card__content-link:visited {
@@ -145,7 +145,7 @@ body {
   .btn:active {
     background-color: #766CF1;
     transform: translateY(0.2em); }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 25em) {
     .btn {
       width: 27.9rem;
       height: 5rem;
