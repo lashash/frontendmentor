@@ -1,0 +1,46 @@
+$Dark-cyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+
+
+$bp-small: 30em;
+$bp-medium: 37.5em;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px
+    
+    
+
+
+    
+    
+}
+
+body { 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: $Cream;    
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 1.4rem;   
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+      
+}
+
+.card{
+  
+}
