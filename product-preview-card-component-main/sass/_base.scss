@@ -1,0 +1,26 @@
+$Dark-cyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+
+$bp-small: 25em;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px   
+}
+
+body { 
+    width: 100vw; 
+    height: 100vh;  
+    font-family: 'Montserrat', sans-serif;          
+    font-family: 'Fraunces', serif;    
+    font-size: 1.6rem;   
+   
+}
