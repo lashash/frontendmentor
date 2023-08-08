@@ -1,9 +1,12 @@
-$Dark-cyan: hsl(158, 36%, 37%);
-$Cream: hsl(30, 38%, 92%);
+$Light-red: hsl(0, 100%, 67%);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
 
-$Very-dark-blue: hsl(212, 21%, 14%);
-$Dark-grayish-blue: hsl(228, 12%, 48%);
 $White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
 
 
 $bp-small: 30em;
@@ -20,13 +23,7 @@ $bp-medium: 37.5em;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px
-    
-    
-
-
-    
-    
+    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px   
 }
 
 body { 
@@ -42,5 +39,6 @@ body {
 }
 
 .card{
+
   
 }
