@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 30em) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2ebe3;
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 30em) {
+    body {
+      flex-direction: column; } }
+
+.card {
+  max-width: 60rem;
+  max-height: 45rem;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden; }
+  @media only screen and (max-width: 30em) {
+    .card {
+      width: 34.3rem;
+      min-height: 61.1rem;
+      flex-direction: column; } }
+  .card__photo-1 {
+    display: block;
+    width: 50%; }
+    @media only screen and (max-width: 30em) {
+      .card__photo-1 {
+        display: none; } }
+  .card__photo-2 {
+    display: none; }
+    @media only screen and (max-width: 30em) {
+      .card__photo-2 {
+        display: block;
+        width: 100%;
+        height: 45.8rem; } }
+  .card__content {
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .card__content {
+        gap: 1.5rem; } }
+    @media only screen and (max-width: 30em) {
+      .card__content {
+        padding: 2.4rem;
+        gap: 1.6rem; } }
+
+.card__content {
+  width: 50%; }
+  @media only screen and (max-width: 30em) {
+    .card__content {
+      width: 100%; } }
+  .card__content--header-3 {
+    color: #6c7289;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase; }
+  .card__content--header-1 {
+    color: #1c232b;
+    font-family: fraunces;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.2rem; }
+  .card__content--text {
+    color: #6c7289;
+    font-weight: 500;
+    line-height: 2.3rem; }
+  .card__content--price {
+    display: flex;
+    align-items: center; }
+    .card__content--price-1 {
+      color: #3c8067;
+      font-family: Fraunces;
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 3.2rem;
+      margin-right: 1.9rem; }
+    .card__content--price-2 {
+      color: #6c7289;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 2.3rem;
+      text-decoration: line-through; }
+  .card__content--btn {
+    background-color: #3c8067;
+    max-width: 23.6rem;
+    min-height: 4.8rem;
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .card__content--btn:hover {
+      background-color: #1A4032; }
+    .card__content--btn-text {
+      font-size: 1.4rem;
+      color: white;
+      font-weight: 700;
+      padding-left: 2rem; }
