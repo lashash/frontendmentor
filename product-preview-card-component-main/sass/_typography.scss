@@ -1,0 +1,84 @@
+.card__content{
+    width: 50%;
+
+    @media only screen and (max-width: $bp-small) {            
+        width: 100%;
+    }
+    &--header-3{
+        color: $Dark-grayish-blue;
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+
+    }
+
+    &--header-1{
+        color: $Very-dark-blue;
+        font-family: fraunces;
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 3.2rem;
+
+
+
+    }
+
+    &--text{
+        
+        color: $Dark-grayish-blue;        
+        font-weight: 500;
+        line-height: 2.3rem;
+
+
+
+    }
+
+    &--price{
+        display: flex;
+        align-items: center;
+
+        &-1{
+            color: $Dark-cyan;
+            font-family: Fraunces;
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 3.2rem;
+            margin-right: 1.9rem;
+
+        }
+
+        &-2{
+            color: $Dark-grayish-blue;
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 2.3rem;
+            text-decoration: line-through;
+        }
+
+    }
+
+    &--btn{        
+        background-color: $Dark-cyan;
+        max-width: 23.6rem;
+        min-height: 4.8rem;
+        border: none;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+            background-color: #1A4032;
+        }
+
+        &-text{
+            font-size: 1.4rem;
+            color: $White;
+            font-weight: 700;
+            padding-left: 2rem;
+        }
+
+       
+    }
+}
