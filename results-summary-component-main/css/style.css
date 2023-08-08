@@ -12,9 +12,27 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #f2ebe3;
+  background-color: #ebf1ff;
   font-family: 'Hanken Grotesk', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.card {
+  min-width: 73.6rem;
+  height: 51.2rem;
+  border-radius: 3.2rem;
+  background-color: white; }
+  .card__content {
+    display: flex;
+    width: 100%;
+    height: 100%; }
+    .card__content--side-1 {
+      width: 50%;
+      height: 100%;
+      background-image: linear-gradient(#7857ff, #2e2be9);
+      border-radius: 3.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }

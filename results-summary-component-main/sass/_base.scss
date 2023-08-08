@@ -9,6 +9,18 @@ $Light-lavender: hsl(241, 100%, 89%);
 $Dark-gray-blue: hsl(224, 30%, 27%);
 
 
+
+//Gradients
+
+//bacground
+$Light-slate-blue: hsl(252, 100%, 67%);
+$Light-royal-blue: hsl(241, 81%, 54%);
+
+//circle
+
+$Violet-blue: hsla(256, 72%, 46%, 1);
+$Persian-blue: hsla(241, 72%, 46%, 0);
+
 $bp-small: 30em;
 $bp-medium: 37.5em;
 
@@ -29,9 +41,9 @@ html {
 body { 
     width: 100vw; 
     height: 100vh; 
-    background-color: $Cream;    
+    background-color: $Pale-blue;    
     font-family: 'Hanken Grotesk', sans-serif;    
-    font-size: 1.4rem;   
+    font-size: 1.8rem;   
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -39,6 +51,36 @@ body {
 }
 
 .card{
+    min-width: 73.6rem;
+    height: 51.2rem;
+    border-radius: 3.2rem;
+    background-color: $White;
+    
+
+    &__content {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        &--side-1{
+            width: 50%;
+            height: 100%;
+            background-image: linear-gradient($Light-slate-blue, $Light-royal-blue);
+            border-radius: 3.2rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+        }
+
+        &--side-2 {
+
+
+        }
+
+    }
 
   
 }
