@@ -21,8 +21,8 @@ $Light-royal-blue: hsl(241, 81%, 54%);
 $Violet-blue: hsla(256, 72%, 46%, 1);
 $Persian-blue: hsla(241, 72%, 46%, 0);
 
-$bp-small: 30em;
-$bp-medium: 37.5em;
+$bp-small: 37.5em;
+
 
 
 *,
@@ -36,6 +36,8 @@ $bp-medium: 37.5em;
 html {
     box-sizing: border-box;
     font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px   
+
+    
 }
 
 body { 
@@ -47,6 +49,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;  
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 1.6rem;
+    }
       
 }
 
@@ -56,6 +62,13 @@ body {
     border-radius: 3.2rem;
     background-color: $White;
     display: flex;
+
+    @media only screen and (max-width: $bp-small){
+        flex-direction: column;
+        width: 37.5rem;
+        height: 80.9rem;
+        
+    }
     
 
    
@@ -70,8 +83,19 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             gap: 3rem;
             padding: 3.8rem 5.4rem 5.5rem;
+
+            @media only screen and (max-width: $bp-small){
+                width: 100%;
+                max-height: 35.6rem;
+                border-radius: 0rem 0rem 3.2rem 3.2rem; 
+                gap: 2rem;
+                padding: 2.4rem 5.7rem;
+                
+               
+            }
 
             &-result{
                 width: 20rem;
@@ -82,6 +106,12 @@ body {
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+
+                @media only screen and (max-width: $bp-small){
+                    width: 14rem;
+                    height: 14rem;                    
+                   
+                }
         }
 
         
@@ -91,7 +121,16 @@ body {
     &__side--2 {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 1.6rem;
+        padding: 4rem;
+
+        @media only screen and (max-width: $bp-small){
+            padding: 3rem;                   
+           
+        }
+
+
 
         &-img{
             display: block;
@@ -154,9 +193,16 @@ body {
 }
 
 .content{
-    width: 28.8rem;
+        width: 28.8rem;
+        min-height: 5.6rem;
         padding: 1.6rem;
         display: flex;
         align-items: center; 
         justify-content: space-between; 
+
+        @media only screen and (max-width: $bp-small){
+            width: 31.5rem;  
+                        
+           
+        }
 }

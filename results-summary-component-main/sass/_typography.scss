@@ -15,7 +15,7 @@
     }
 
     &-text{
-        font-size: 1.8rem;
+        
         color: $Light-lavender;
         font-weight: 500;
         text-align: center;
@@ -27,17 +27,19 @@
 
 &--2{
 
-    padding: 4rem;
+   
 
     &-header2{
         font-size: 2.4rem;
         font-weight: 700;
         color: $Dark-gray-blue;
         padding-bottom: 1.2rem;
+        @media only screen and (max-width: $bp-small){
+           font-size: 1.8rem;
+        }
     }
 
-    &-header3{
-        font-size: 1.8rem;
+    &-header3{        
         font-weight: 500;
         padding-left: 1.2rem;
 
@@ -55,7 +57,7 @@
 
 .max__result{
     color: $Light-lavender;
-    font-size: 1.8rem;
+    
     font-weight: 700;
 }
 
@@ -80,6 +82,11 @@
     background-color: $Dark-gray-blue;
     cursor: pointer;
     margin-top: 2.5rem;
+
+    @media only screen and (max-width: $bp-small){
+        margin-borr: 0;                    
+       
+    }
 
     &:hover{
         background-image: linear-gradient($Light-slate-blue, $Light-royal-blue);
