@@ -1,0 +1,43 @@
+$Very-dark-blue: hsl(233, 47%, 7%);
+$Dark-desaturated-blue: hsl(244, 38%, 16%);
+$Soft-violet: hsl(277, 64%, 61%);
+
+
+$White: hsl(0, 0%, 100%);
+$Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+$Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+
+
+
+
+$bp-small: 30em;
+$bp-medium: 37.5em;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px    
+}
+
+body { 
+    width: 100vw; 
+    height: 100vh;    
+    font-family: 'Lexend Deca', sans-serif; 
+    font-family: 'Inter', sans-serif;       
+    font-size: 1.5rem;   
+   
+      
+}
+
+.card{
+   
+}
