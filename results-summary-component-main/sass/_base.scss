@@ -51,36 +51,112 @@ body {
 }
 
 .card{
-    min-width: 73.6rem;
+    max-width: 73.6rem;
     height: 51.2rem;
     border-radius: 3.2rem;
     background-color: $White;
+    display: flex;
     
 
-    &__content {
-        display: flex;
-        width: 100%;
-        height: 100%;
+   
+        
+        
 
-        &--side-1{
+        &__side--1{
             width: 50%;
             height: 100%;
             background-image: linear-gradient($Light-slate-blue, $Light-royal-blue);
             border-radius: 3.2rem;
-
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            padding: 3.8rem 5.4rem 5.5rem;
 
-
+            &-result{
+                width: 20rem;
+                height: 20rem;
+                border-radius: 50%;
+                background-image: linear-gradient($Violet-blue, $Persian-blue);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
         }
 
-        &--side-2 {
+        
 
+    }
 
+    &__side--2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        &-img{
+            display: block;
         }
+        
+
+
+        &-score{
+
+            &-1{
+                border-radius: 1.2rem;
+                background-color:  rgba($Light-red, .1);                
+            }
+
+            &-2{
+                border-radius: 1.2rem;
+                background-color:  rgba($Orangey-yellow, .1);                
+            }
+
+            &-3{
+                border-radius: 1.2rem;
+                background-color:  rgba($Green-teal, .1);                
+            }
+
+            &-4{
+                border-radius: 1.2rem;
+                background-color:  rgba($Cobalt-blue, .1);                
+            }
+            
+        
+        }
+
+        &-reaction{
+            display: flex;    
+            color: $Light-red;       
+            
+        }
+
+        &-memory{
+            display: flex;
+            color: $Orangey-yellow;
+        }
+
+        &-verbal{
+            display: flex;
+            color: $Green-teal;
+        }
+
+        &-visual{
+            display: flex;
+            color: $Cobalt-blue;
+            justify-content: space-between;
+        }
+        
+
 
     }
 
   
+}
+
+.content{
+    width: 28.8rem;
+        padding: 1.6rem;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
 }

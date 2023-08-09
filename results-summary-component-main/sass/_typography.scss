@@ -1,3 +1,92 @@
-.card__content{
-    
+.card__side{
+
+    &--1{
+    &-header2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $Light-lavender;
+
+    }
+
+    &-header1{
+        color: $White;
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    &-text{
+        font-size: 1.8rem;
+        color: $Light-lavender;
+        font-weight: 500;
+        text-align: center;
+    }
+
 }
+
+
+
+&--2{
+
+    padding: 4rem;
+
+    &-header2{
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $Dark-gray-blue;
+        padding-bottom: 1.2rem;
+    }
+
+    &-header3{
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-left: 1.2rem;
+
+    }
+}   
+   
+}
+
+.your__result{
+    font-size: 7.2rem;
+    color: $White;
+    font-weight: 800;
+    line-height: 7.2rem;
+}
+
+.max__result{
+    color: $Light-lavender;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.your__result2{
+    color: $Dark-gray-blue;
+    font-weight: 700;
+}
+
+.max__result2{
+    color: $Dark-gray-blue;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.btn{
+    color: $White;
+    font-size: 1.8rem;
+    max-width: 28.8rem;
+    min-height: 5.6rem;
+    border: none;
+    border-radius: 12.8rem;
+    background-color: $Dark-gray-blue;
+    cursor: pointer;
+    margin-top: 2.5rem;
+
+    &:hover{
+        background-image: linear-gradient($Light-slate-blue, $Light-royal-blue);
+    }
+
+
+
+}
+
+
