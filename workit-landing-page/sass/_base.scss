@@ -1,0 +1,36 @@
+$color-prymary: hsl(273, 85%, 13%);
+$color-green: hsl(150, 100%, 63%);
+$color-gray: hsl(271, 12%, 34%);
+
+$color-white-1: hsl(0, 0%, 100%);
+$color-white-2: hsl(276, 100%, 99%);
+
+
+$bp-small: 37.5em;
+$bp-medium: 58em;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px   
+    
+   
+}
+
+body { 
+    width: 100vw; 
+    height: 100vh;    
+    font-family: 'Fraunces', serif;
+    font-family: 'Manrope', sans-serif;         
+    font-size: 1.8rem;
+    
+        
+}
+
