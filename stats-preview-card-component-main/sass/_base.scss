@@ -46,12 +46,15 @@ body {
 .card{
     max-width: 111rem;
     min-height: 44.6rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
     background-color: $Dark-desaturated-blue;
     display: flex;
     @media only screen and (max-width: $bp-small) {        
         max-width: 32.7rem;
         min-height: 78rem;
-        flex-direction: column;        
+        flex-direction: column;
+                
     }    
 
     &__content{

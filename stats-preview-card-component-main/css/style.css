@@ -29,6 +29,8 @@ body {
 .card {
   max-width: 111rem;
   min-height: 44.6rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
   background-color: #1b1938;
   display: flex; }
   @media only screen and (max-width: 37.5em) {
