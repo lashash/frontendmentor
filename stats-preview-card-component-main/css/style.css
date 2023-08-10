@@ -11,6 +11,9 @@ html {
   @media only screen and (max-width: 58em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 58em) and (max-width: 37.5em) {
+    html {
+      font-size: 62.5%; } }
 
 body {
   width: 100vw;
@@ -28,35 +31,76 @@ body {
   min-height: 44.6rem;
   background-color: #1b1938;
   display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .card {
+      max-width: 32.7rem;
+      min-height: 78rem;
+      flex-direction: column; } }
   .card__content {
     padding: 7.1rem 9.5rem 5.9rem 7.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .card__content {
+        text-align: center;
+        padding: 3.2rem;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center; } }
     .card__content--image {
       min-width: 54rem;
       position: relative; }
+      @media only screen and (max-width: 37.5em) {
+        .card__content--image {
+          width: 32.7rem;
+          height: 24rem;
+          order: -1; } }
       .card__content--image-1 {
         display: block;
-        width: 100%;
-        position: absolute; }
+        position: absolute;
+        width: 100%; }
+        @media only screen and (max-width: 37.5em) {
+          .card__content--image-1 {
+            display: none; } }
       .card__content--image-2 {
         display: none; }
+        @media only screen and (max-width: 37.5em) {
+          .card__content--image-2 {
+            display: block;
+            max-width: 32.7rem;
+            height: 24rem;
+            position: absolute; } }
       .card__content--image-hover {
         position: absolute;
+        display: block;
         width: 100%;
         height: 100%;
         background-color: #aa5cdb;
         opacity: .5; }
+        @media only screen and (max-width: 37.5em) {
+          .card__content--image-hover {
+            max-width: 32.7rem;
+            height: 24rem; } }
   .card__stat-headings {
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .card__stat-headings {
+        flex-direction: column;
+        gap: 2.4rem;
+        padding-top: 4rem; } }
 
 .card__header-1 {
   font-size: 3.6rem;
   color: white; }
   .card__header-1-p {
     color: #aa5cdb; }
+  @media only screen and (max-width: 58em) {
+    .card__header-1 {
+      font-size: 2.6rem;
+      padding-bottom: 1.6rem; } }
 
 .card__text {
   color: rgba(255, 255, 255, 0.6);
