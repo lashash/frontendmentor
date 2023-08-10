@@ -1,0 +1,106 @@
+.header{
+    
+    padding-top: 5.7rem;
+    height: 90vh;
+    background-color: $color-prymary;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    display: grid;
+    row-gap: 3rem;
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr)  minmax(min-content, 1fr);
+    grid-template-rows: max-content repeat(3, minmax(min-content, 1fr));   
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 95% 95%/0 0 30% 30%;
+    
+    
+    
+
+    &__main{
+        font-size: 8rem;
+        color: $color-white-2;
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+        &--line{
+            border-bottom: .3rem solid $color-green;
+        }
+    }
+
+    &__text{
+        grid-column: 3/4;
+        color: $color-white-1;
+        font-size: 1.8rem;
+        justify-self: center;
+        border-bottom: .3rem solid $color-green;
+        line-height: 3.2rem;
+        font-weight: 700;
+        
+       
+    }
+
+    &__button{
+        font-size: 1.8rem;
+        color: $color-prymary;
+        font-weight: 700;
+        width: 16.1rem;
+        height: 6.1rem;        
+        background-color: $color-green;
+        border: .2rem solid $color-green;
+        cursor: pointer;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        justify-self: center;
+
+        &:hover{
+            color: $color-white-1;
+            background-color: transparent;
+        }
+        
+        
+
+    }
+
+
+    &__img{
+
+        &--main{
+            
+            max-width: 76.2rem;
+            max-height: 42.4rem;
+            justify-self: center;
+            grid-row: 4/span 2;
+            grid-column: 2/3;
+            transform: translateY(20%);
+           
+
+        }
+
+        &--logo{
+            justify-self: center;
+            grid-row: 1/2;
+            grid-column: 1/2;
+            
+
+        }
+
+        &--1{
+            
+            grid-row: 2/span 2;
+            grid-column: 1/2;
+            transform: translateX(-40%);
+
+        }
+
+        &--2 {
+            grid-row: 2/4;
+            grid-column: 3/4;
+            justify-self: end;
+            transform: translateX(40%);
+        }
+    }
+    
+
+}

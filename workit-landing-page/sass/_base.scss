@@ -29,8 +29,11 @@ body {
     height: 100vh;    
     font-family: 'Fraunces', serif;
     font-family: 'Manrope', sans-serif;         
-    font-size: 1.8rem;
-    
-        
+    font-size: 1.8rem;       
+}
+
+.content{
+    display: grid;
+    grid-template-columns: minmax(6rem, 1fr) repeat(6, minmax(min-content, 14rem) ) minmax(6rem, 1fr);
 }
 

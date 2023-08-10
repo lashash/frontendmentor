@@ -15,3 +15,72 @@ body {
   font-family: 'Fraunces', serif;
   font-family: 'Manrope', sans-serif;
   font-size: 1.8rem; }
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) repeat(6, minmax(min-content, 14rem)) minmax(6rem, 1fr); }
+
+.header {
+  padding-top: 5.7rem;
+  height: 90vh;
+  background-color: #24053d;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: grid;
+  row-gap: 3rem;
+  grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
+  grid-template-rows: max-content repeat(3, minmax(min-content, 1fr));
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 95% 95%/0 0 30% 30%; }
+  .header__main {
+    font-size: 8rem;
+    color: #fdfaff;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3; }
+    .header__main--line {
+      border-bottom: 0.3rem solid #42ffa1; }
+  .header__text {
+    grid-column: 3/4;
+    color: white;
+    font-size: 1.8rem;
+    justify-self: center;
+    border-bottom: 0.3rem solid #42ffa1;
+    line-height: 3.2rem;
+    font-weight: 700; }
+  .header__button {
+    font-size: 1.8rem;
+    color: #24053d;
+    font-weight: 700;
+    width: 16.1rem;
+    height: 6.1rem;
+    background-color: #42ffa1;
+    border: 0.2rem solid #42ffa1;
+    cursor: pointer;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center; }
+    .header__button:hover {
+      color: white;
+      background-color: transparent; }
+  .header__img--main {
+    max-width: 76.2rem;
+    max-height: 42.4rem;
+    justify-self: center;
+    grid-row: 4/span 2;
+    grid-column: 2/3;
+    transform: translateY(20%); }
+  .header__img--logo {
+    justify-self: center;
+    grid-row: 1/2;
+    grid-column: 1/2; }
+  .header__img--1 {
+    grid-row: 2/span 2;
+    grid-column: 1/2;
+    transform: translateX(-40%); }
+  .header__img--2 {
+    grid-row: 2/4;
+    grid-column: 3/4;
+    justify-self: end;
+    transform: translateX(40%); }
