@@ -35,5 +35,7 @@ body {
 .content{
     display: grid;
     grid-template-columns: minmax(6rem, 1fr) repeat(6, minmax(min-content, 14rem) ) minmax(6rem, 1fr);
+    justify-content: center;
+    align-content: center;
 }
 

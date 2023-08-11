@@ -4,12 +4,33 @@
     background-color: $color-white-2;
     grid-row: 2/3;
     grid-column: 1/-1;
-    padding: 0 16rem;  
     display: grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
-    grid-template-rows: repeat(2, max-content);
+    grid-template-rows: 20rem min-content;
     justify-items: center;
+    clip-path: ellipse(150% 100% at 50% 0); 
+
+    &__container{        
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    grid-template-rows: 20rem min-content ;
+    justify-items: center;
+    column-gap: 2.6rem;
+    row-gap: 8rem;
+    
+
+        
+    }
+
+
+    // margin: 0 auto;    
+    // display: grid;    
+    // grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    // grid-template-rows: 20rem min-content ;
+    // justify-items: center;
+    // column-gap: 2.6rem;
+    // row-gap: 8rem;
+    // clip-path: ellipse(150% 100% at 50% 0); 
+    
     
     
 
@@ -20,13 +41,50 @@
         max-width: 76.2rem;
         max-height: 42.4rem;                  
         transform: translateY(-60%);
-        
+              
         
     }
 
-    &__content{
+    &__content{        
         display: grid;
         grid-template-rows: repeat(3, minmax(max-content, 1fr));
+        grid-template-rows: repeat(3, min-content);
+        justify-items: center;
+        row-gap: 2.8rem;
+
+        &--number{
+            font-size: 2.4rem; 
+            font-family: Fraunces;           
+            font-weight: 600;
+            color: $color-prymary;
+            background-color: transparent;
+            width: 5.6rem;
+            height: 5.6rem;
+            border-radius: 50%;            
+            border: .1rem solid $color-gray;
+            text-align: center;
+            padding: 1rem;
+            
+            
+        }
+
+        &-header{
+            font-size: 3.2rem;
+            font-family: Fraunces;
+            font-weight: 600; 
+            line-height: 4rem;
+            color: $color-prymary;
+            text-align: center;
+
+
+        }
+
+        &--text{
+            font-weight: 400;
+            line-height: 3.2rem;
+            color: $color-prymary;
+            text-align: center;
+        }
         
     }
     

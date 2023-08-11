@@ -4,8 +4,7 @@
     background-color: $color-prymary;
     grid-column: 1/-1;
     grid-row: 1/2;
-    display: grid;
-   
+    display: grid;   
     grid-template-columns: minmax(min-content, 1fr) minmax(max-content, 1fr)  minmax(min-content, 1fr);
     grid-template-rows: max-content repeat(3, minmax(min-content, 1fr));   
     align-items: center;
