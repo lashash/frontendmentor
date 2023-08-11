@@ -2,15 +2,22 @@
     padding-top: 5.7rem;
     height: 80vh;   
     background-color: $color-prymary;
-    grid-column: 1/-1;
-    grid-row: 1/2;
+    // grid-column: 1/-1;
+    // grid-row: 1/2;
     display: grid;   
     grid-template-columns: minmax(min-content, 1fr) minmax(max-content, 1fr)  minmax(min-content, 1fr);
-    grid-template-rows: max-content repeat(3, minmax(min-content, 1fr));   
+    grid-template-rows: max-content repeat(3, minmax(min-content, 1fr)) 20rem;   
     align-items: center;
     justify-content: center;    
     overflow: hidden;
     clip-path: ellipse(150% 100% at 50% 0); 
+    z-index: 1;
+    row-gap: 2.8rem;
+    position: relative;
+
+
+     
+   
 
     
     
@@ -64,8 +71,7 @@
         cursor: pointer;
         grid-column: 2/3;
         grid-row: 3/4;
-        justify-self: center;
-        transform: translateY(-5rem);
+        justify-self: center;       
 
         &:hover{
             color: $color-white-1;
@@ -78,6 +84,19 @@
 
 
     &__img{
+
+        &--phone{
+            display: block;
+            grid-row: 5/span 2;
+            grid-column: 2/3;            
+            max-width: 76.2rem;
+            max-height: 42.4rem; 
+            transform: translateY(13%);
+            position: absolute;
+            z-index: 999;
+            
+            
+        }
 
       
 
