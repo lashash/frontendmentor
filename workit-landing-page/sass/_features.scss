@@ -8,7 +8,8 @@
     grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr)); 
     grid-template-rows: 20rem min-content;
     justify-items: center;
-    clip-path: ellipse(150% 100% at 50% 0);  
+    clip-path: ellipse(150% 100% at 50% 0);
+    column-gap: 2.6rem;  
     
     
 
@@ -23,8 +24,8 @@
         
     }
 
-    &__content{ 
-        
+    &__content{
+        height: 100%;         
         display: grid;               
         justify-items: center;
         column-gap: 2.6rem;
