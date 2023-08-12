@@ -15,11 +15,13 @@ body {
   font-size: 1.8rem; }
 
 .content {
-  display: grid; }
+  display: grid;
+  background-color: #fdfaff;
+  row-gap: 5rem; }
 
 .header {
   padding-top: 5.7rem;
-  height: 80vh;
+  height: 60vh;
   background-color: #24053d;
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) minmax(max-content, 1fr) minmax(min-content, 1fr);
@@ -95,46 +97,47 @@ body {
     transform: translateX(40%); }
 
 .features {
-  width: 100%;
-  height: 80vh;
   background-color: #fdfaff;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
-  grid-template-rows: 20rem min-content;
-  justify-items: center;
-  clip-path: ellipse(150% 100% at 50% 0);
+  margin-top: 7rem;
+  grid-template-columns: repeat(auto-fit, 36rem);
   column-gap: 2.6rem;
-  margin-top: -5rem;
-  padding: 0 16rem;
+  align-items: start;
   justify-content: center;
-  align-content: center; }
-  .features__content {
-    height: 100%;
-    display: grid;
-    justify-items: center;
-    column-gap: 2.6rem;
-    row-gap: 8rem; }
-    .features__content--number {
-      font-size: 2.4rem;
-      font-family: Fraunces;
-      font-weight: 600;
-      color: #24053d;
-      background-color: transparent;
-      width: 5.6rem;
-      height: 5.6rem;
-      border-radius: 50%;
-      border: 0.1rem solid #574c61;
-      text-align: center;
-      padding: 1rem; }
-    .features__content-header {
-      font-size: 3.2rem;
-      font-family: Fraunces;
-      font-weight: 600;
-      line-height: 4rem;
-      color: #24053d;
-      text-align: center; }
-    .features__content--text {
-      font-weight: 400;
-      line-height: 3.2rem;
-      color: #24053d;
-      text-align: center; }
+  clip-path: ellipse(150% 100% at 50% 0); }
+  .features__img--phone {
+    width: 70.2rem;
+    height: 40.5rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+    z-index: 10;
+    margin-top: -25rem; }
+
+.feature {
+  display: grid;
+  grid-template-rows: 8.4rem repeat(2, min-content);
+  justify-items: center;
+  row-gap: 2.8rem; }
+  .feature__number {
+    font-size: 2.4rem;
+    font-family: Fraunces;
+    font-weight: 600;
+    color: #24053d;
+    background-color: transparent;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    border: 0.1rem solid #574c61;
+    text-align: center;
+    padding: 1rem; }
+  .feature__header {
+    font-size: 3.2rem;
+    font-family: Fraunces;
+    font-weight: 600;
+    line-height: 4rem;
+    color: #24053d; }
+  .feature__text {
+    font-weight: 400;
+    line-height: 3.2rem;
+    color: #24053d;
+    text-align: center; }

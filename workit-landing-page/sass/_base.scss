@@ -28,12 +28,16 @@ body {
         
     font-family: 'Fraunces', serif;
     font-family: 'Manrope', sans-serif;         
-    font-size: 1.8rem;       
+    font-size: 1.8rem;
+      
 }
 
 .content{
     
     display: grid;
+    background-color: $color-white-2;
+    row-gap: 5rem;
+    
     
    
     
