@@ -12,7 +12,8 @@ html {
 body {
   font-family: 'Fraunces', serif;
   font-family: 'Manrope', sans-serif;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  font-weight: 400; }
 
 .content {
   background-color: #fdfaff; }
@@ -21,8 +22,6 @@ body {
   font-size: 1.8rem;
   color: #24053d;
   font-weight: 700;
-  width: 16.1rem;
-  height: 6.1rem;
   background-color: #42ffa1;
   border: 0.2rem solid #42ffa1;
   cursor: pointer; }
@@ -72,6 +71,8 @@ body {
     .header__text:hover {
       color: #42ffa1; }
   .header__button {
+    width: 16.1rem;
+    height: 6.1rem;
     margin: 3.7rem auto 4.6rem; }
   .header__img--phone {
     display: block; }
@@ -107,6 +108,7 @@ body {
 
 .features {
   padding-top: 11rem;
+  padding-bottom: 17.1rem;
   background-color: #fdfaff;
   display: grid;
   grid-template-columns: repeat(auto-fit, 36rem);
@@ -150,3 +152,26 @@ body {
     line-height: 3.2rem;
     color: #24053d;
     text-align: center; }
+
+.founder {
+  background-color: white; }
+  .founder__img {
+    max-width: 45.01rem; }
+  .founder__coment {
+    padding: 6.4rem;
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    row-gap: 3.2rem;
+    max-width: 73rem;
+    min-height: 41.3rem;
+    background-color: #24053d; }
+  .founder__header {
+    font-family: Fraunces;
+    font-size: 5.6rem;
+    font-weight: 600;
+    color: #fdfaff; }
+  .founder__text {
+    color: #fdfaff; }
+  .founder__button {
+    width: 19rem;
+    height: 6.1rem; }

@@ -1,0 +1,44 @@
+.founder{
+    background-color: $color-white-1;
+    
+
+    &__img{
+       max-width: 45.01rem;
+       
+
+    }
+
+    &__coment{
+        padding: 6.4rem;
+        display: grid;
+        grid-template-rows: repeat(3, max-content);
+        row-gap: 3.2rem;
+        max-width: 73rem;
+        min-height: 41.3rem;
+        background-color: $color-prymary;
+
+
+
+    }
+
+    &__header{
+        font-family: Fraunces;
+        font-size: 5.6rem;
+        font-weight: 600;
+        color: $color-white-2;
+
+
+
+    }
+
+    &__text{
+        color: $color-white-2;
+
+
+    }
+
+    &__button{
+        width: 19rem;
+        height: 6.1rem;
+    }
+}

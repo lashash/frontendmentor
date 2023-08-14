@@ -1,12 +1,13 @@
 .features{   
     padding-top: 11rem; 
+    padding-bottom: 17.1rem;
     background-color: $color-white-2;
     display: grid;  
     grid-template-columns: repeat(auto-fit, 36rem);    
     column-gap: 2.6rem;
     align-items:start;     
     justify-content: center;    
-    clip-path: ellipse(150% 100% at 50% 0); 
+    clip-path: ellipse(150% 100% at 50% 0);
 
     &__img--phone{
         width: 70.2rem;
