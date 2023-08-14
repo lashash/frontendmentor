@@ -33,15 +33,7 @@ body {
 }
 
 .content{
-    
-    display: grid;
-    background-color: $color-white-2;
-    row-gap: 5rem;
-    
-    
-   
-    
-    // grid-template-columns: minmax(6rem, 1fr) repeat(6, minmax(min-content, 14rem) ) minmax(6rem, 1fr);
+    background-color: $color-white-2;    
     
 }
 
