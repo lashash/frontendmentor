@@ -17,6 +17,19 @@ body {
 .content {
   background-color: #fdfaff; }
 
+.btn {
+  font-size: 1.8rem;
+  color: #24053d;
+  font-weight: 700;
+  width: 16.1rem;
+  height: 6.1rem;
+  background-color: #42ffa1;
+  border: 0.2rem solid #42ffa1;
+  cursor: pointer; }
+  .btn:hover {
+    color: white;
+    background-color: transparent; }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -59,19 +72,7 @@ body {
     .header__text:hover {
       color: #42ffa1; }
   .header__button {
-    margin-top: 3.7rem;
-    font-size: 1.8rem;
-    color: #24053d;
-    font-weight: 700;
-    width: 16.1rem;
-    height: 6.1rem;
-    background-color: #42ffa1;
-    border: 0.2rem solid #42ffa1;
-    cursor: pointer;
     margin: 3.7rem auto  4.6rem; }
-    .header__button:hover {
-      color: white;
-      background-color: transparent; }
   .header__img--phone {
     display: block; }
   .header__img--logo {
