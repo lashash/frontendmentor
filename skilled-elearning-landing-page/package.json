@@ -4,7 +4,7 @@
   "description": "Skilled e-learning landing page",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+   "watch:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "lasha",
   "license": "ISC",

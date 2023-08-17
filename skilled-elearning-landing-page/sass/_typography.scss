@@ -1,0 +1,27 @@
+.btn{
+    width: 16.7rem;
+    height: 5.6rem;
+    border-radius: 2.8rem;
+    border: none;
+    color: $Color-White;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: $Color-White;
+}
+
+.header{
+    &__main{
+        font-size: 5.6rem;
+        font-weight: 800;
+        line-height: normal;
+        color: $Color-Bul-Dark;
+
+    }
+
+    &__paragraph{
+        color: $color-Gray;
+        
+
+
+    }
+}

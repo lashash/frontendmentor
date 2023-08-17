@@ -1,0 +1,62 @@
+.header{
+    position: relative;
+    padding-top: 2.4rem;
+    display: flex;
+    flex-direction: column; 
+    height: 80vh;
+    z-index: 1;
+    
+
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 2.9rem;
+        padding-top: 18.56rem;
+        width: 45.7rem;
+        padding-top: 2.9rem;
+    }
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+
+        &--logo{
+            display: block;
+            width: 11.12rem;
+            height: 2.7684rem;
+            color: $Color-Bul-Dark;
+
+        }
+
+        &--button{
+            background-color: $Color-Bul-Dark;
+        }
+
+
+    }
+
+    &__button-2{
+        margin-top: 4rem;
+        height: 6.3rem;
+        background-image: linear-gradient($Color-grad-1-1, $Color-grad-1-2);
+        
+        
+
+
+    }
+
+    &__img {
+        display: block;
+        width: 99.163rem;
+        height: 93.692rem;
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: translate(45%, -15%);
+        z-index: -1;
+
+    }
+
+
+}

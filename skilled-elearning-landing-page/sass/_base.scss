@@ -5,6 +5,13 @@ $color-Pink-dark: hsl(341, 92%, 62%);
 $Color-Pink-Light: hsl(341, 100%, 83%);
 $Color-White: hsl(0, 0%, 100%);
 
+$Color-grad-1-1: hsl(13, 100%, 64%);
+$Color-grad-1-2: hsl(322, 87%, 55%);
+
+
+$Color-grad-2-1: hsl(237, 100%, 64%);
+$Color-grad-2-2: hsl(322, 87%, 55%);
+
 
 
 
@@ -24,13 +31,21 @@ $bp-medium: 58em;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px    
+    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px  
+     
 }
 
 body { 
         
-    font-family: 'Plus Jakarta Sans', sans-serif;        
+    font-family: 'Plus Jakarta Sans', sans-serif;   
+    font-size: 1.8rem;      
        
+}
+
+.container{
+    background-color: $Color-White;
+    overflow: hidden;
+    padding: 2.4rem 16.5rem 0rem 16.5rem;
 }
 
 
