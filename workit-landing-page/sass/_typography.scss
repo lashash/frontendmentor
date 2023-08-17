@@ -12,4 +12,8 @@
         background-color: transparent;
 }
 
+@media only screen and (max-width: $bp-medium){ 
+    font-size: 1.6rem;
+}
+
 }

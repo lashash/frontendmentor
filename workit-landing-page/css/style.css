@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Fraunces1;
+  src: url(../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf); }
+
 *,
 *::before,
 *::after {
@@ -10,10 +14,13 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Fraunces', serif;
+  font-family: 'Fraunces1', serif;
   font-family: 'Manrope', sans-serif;
   font-size: 1.8rem;
   font-weight: 400; }
+  @media only screen and (max-width: 58em) {
+    body {
+      font-size: 1.6rem; } }
 
 .content {
   background-color: #fdfaff; }
@@ -28,6 +35,9 @@ body {
   .btn:hover {
     color: white;
     background-color: transparent; }
+  @media only screen and (max-width: 58em) {
+    .btn {
+      font-size: 1.6rem; } }
 
 .header {
   display: flex;
@@ -48,10 +58,16 @@ body {
     clip-path: ellipse(150% 100% at 50% 0);
     z-index: -1; }
   .header__top {
-    margin: 0 16.5rem;
     display: flex;
     padding-top: 5.8rem;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 0 16.5rem; }
+    @media only screen and (max-width: 58em) {
+      .header__top {
+        margin: 0 3.9rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__top {
+        margin: 0 1.6rem; } }
   .header__main {
     font-size: 8rem;
     font-family: Fraunces;
@@ -59,6 +75,12 @@ body {
     color: #fdfaff;
     text-align: center;
     padding-top: 6.4rem; }
+    @media only screen and (max-width: 58em) {
+      .header__main {
+        font-size: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__main {
+        font-size: 5rem; } }
     .header__main--line {
       border-bottom: 0.3rem solid #42ffa1; }
   .header__text {
@@ -74,8 +96,23 @@ body {
     width: 16.1rem;
     height: 6.1rem;
     margin: 3.7rem auto 4.6rem; }
+    @media only screen and (max-width: 58em) {
+      .header__button {
+        width: 13.3rem;
+        height: 5.5rem; } }
   .header__img--phone {
-    display: block; }
+    display: block;
+    align-self: center;
+    width: 70.2rem;
+    height: 40.5rem; }
+    @media only screen and (max-width: 58em) {
+      .header__img--phone {
+        width: 47.9rem;
+        height: 28.66rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__img--phone {
+        width: 29.29rem;
+        height: 16.9rem; } }
   .header__img--logo {
     display: block;
     width: 9.6rem;
@@ -88,6 +125,12 @@ body {
     width: 27rem;
     height: 21.5rem;
     transform: translateX(-10rem); }
+    @media only screen and (max-width: 58em) {
+      .header__img--1 {
+        transform: translateX(-17rem); } }
+    @media only screen and (max-width: 37.5em) {
+      .header__img--1 {
+        display: none; } }
   .header__img--2 {
     position: absolute;
     top: 40%;
@@ -96,39 +139,57 @@ body {
     width: 14.2rem;
     height: 11.3rem;
     transform: translateX(5rem); }
-
-.test__img {
-  z-index: 410;
-  grid-row: 4/5;
-  grid-column: 1/-1;
-  justify-self: center;
-  align-self: center;
-  width: 70.2rem;
-  height: 40.5rem; }
+    @media only screen and (max-width: 58em) {
+      .header__img--2 {
+        transform: translateX(7rem); } }
+    @media only screen and (max-width: 37.5em) {
+      .header__img--2 {
+        display: none; } }
 
 .features {
+  position: relative;
   padding-top: 11rem;
   padding-bottom: 17.1rem;
-  background-color: #fdfaff;
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, 36rem);
   column-gap: 2.6rem;
   align-items: start;
-  justify-content: center;
-  clip-path: ellipse(150% 100% at 50% 0); }
-  .features__img--phone {
-    width: 70.2rem;
-    height: 40.5rem;
-    grid-column: 1 / -1;
-    justify-self: center;
-    z-index: 10;
-    position: absolute; }
+  justify-content: center; }
+  @media only screen and (max-width: 58em) {
+    .features {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: auto;
+      row-gap: 4.8rem; } }
+  .features::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90%;
+    width: 100%;
+    background-color: #fdfaff;
+    clip-path: ellipse(150% 100% at 50% 0);
+    z-index: 1; }
 
 .feature {
   display: grid;
   grid-template-rows: 8.4rem repeat(2, min-content);
   justify-items: center;
-  row-gap: 2.8rem; }
+  row-gap: 2.8rem;
+  z-index: 10; }
+  @media only screen and (max-width: 58em) {
+    .feature {
+      grid-template-columns: 8.4rem 48rem;
+      grid-template-rows: repeat(3, min-content);
+      row-gap: 1.6rem;
+      justify-items: baseline; } }
+  @media only screen and (max-width: 37.5em) {
+    .feature {
+      grid-template-rows: 8.4rem repeat(2, min-content);
+      grid-template-columns: 34.3rem;
+      justify-items: center;
+      row-gap: 1.6rem; } }
   .feature__number {
     font-size: 2.4rem;
     font-family: Fraunces;
@@ -141,69 +202,166 @@ body {
     border: 0.1rem solid #574c61;
     text-align: center;
     padding: 1rem; }
+    @media only screen and (max-width: 58em) {
+      .feature__number {
+        width: 4.8rem;
+        height: 4.6rem;
+        padding: 1.3rem;
+        font-size: 1.6rem;
+        grid-row: 1/2;
+        align-self: center;
+        transform: translateY(5rem); } }
+    @media only screen and (max-width: 37.5em) {
+      .feature__number {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        align-self: baseline;
+        transform: translateY(0rem); } }
   .feature__header {
     font-size: 3.2rem;
     font-family: Fraunces;
     font-weight: 600;
     line-height: 4rem;
     color: #24053d; }
+    @media only screen and (max-width: 58em) {
+      .feature__header {
+        grid-column: 2/3;
+        font-size: 2.8rem;
+        line-height: 3.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .feature__header {
+        grid-column: 1/-1;
+        grid-row: 2/3; } }
   .feature__text {
     font-weight: 400;
     line-height: 3.2rem;
     color: #24053d;
     text-align: center; }
+    @media only screen and (max-width: 58em) {
+      .feature__text {
+        grid-column: 2/3;
+        grid-row: 2/2;
+        text-align: start;
+        line-height: 2.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .feature__text {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        text-align: center; } }
 
 .founder {
   width: 100vw;
+  background-color: white;
+  display: grid;
   justify-content: center;
   align-content: center;
-  padding: 0 16.5rem;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  background-color: white; }
+  grid-template-rows: repeat(3, 17.3rem) 1fr;
+  grid-template-columns: repeat(2, 38.21rem);
+  padding-top: 10.3rem;
+  padding-bottom: 18rem; }
+  @media only screen and (max-width: 58em) {
+    .founder {
+      grid-template-rows: repeat(3, 15.1rem) 1fr;
+      grid-template-columns: repeat(2, 17.5rem); } }
+  @media only screen and (max-width: 37.5em) {
+    .founder {
+      grid-template-rows: 22.8rem;
+      grid-template-columns: 34.3rem;
+      padding-top: 4rem;
+      padding-bottom: 6rem; } }
   .founder__img {
-    max-width: 45.01rem;
-    max-height: 45.3rem;
-    grid-row: 2/-1;
-    grid-column: 2/span 2; }
+    max-width: 47.7rem;
+    max-height: 47.7rem; }
+    @media only screen and (max-width: 58em) {
+      .founder__img {
+        max-width: 28.1rem;
+        max-height: 28.1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .founder__img {
+        justify-self: center; } }
+  .founder__image2 {
+    display: block;
+    max-width: 22.1rem;
+    max-height: 21.2rem;
+    position: absolute;
+    right: 10%;
+    bottom: -15%; }
+    @media only screen and (max-width: 37.5em) {
+      .founder__image2 {
+        display: none; } }
   .founder__coment {
-    align-self: center;
-    grid-row: 2/-1;
-    grid-column: 2/span 5;
+    grid-row: 2/span 2;
+    grid-column: 2/span 2;
+    position: relative;
     padding: 6.4rem;
     display: grid;
-    grid-template-rows: repeat(3, max-content);
+    grid-template-rows: repeat(3, min-content);
     row-gap: 3.2rem;
     max-width: 73rem;
     min-height: 41.3rem;
-    background-color: #24053d;
-    margin-left: 38.3rem;
-    margin-top: 17.3rem; }
+    background-color: #24053d; }
+    @media only screen and (max-width: 58em) {
+      .founder__coment {
+        max-width: 51.4rem;
+        max-height: 37.5rem;
+        padding: 4.8rem 5.6rem 5.6rem 5.6rem;
+        row-gap: 2.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .founder__coment {
+        max-width: 34.3rem;
+        max-height: 37.5rem;
+        padding: 3.2rem 3.1rem;
+        justify-items: center;
+        grid-column: 1/1;
+        grid-row: 2/3; } }
   .founder__header {
     font-family: Fraunces;
     font-size: 5.6rem;
     font-weight: 600;
     color: #fdfaff; }
+    @media only screen and (max-width: 58em) {
+      .founder__header {
+        font-size: 4.8rem;
+        line-height: 5.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .founder__header {
+        font-size: 3.2rem;
+        text-align: center; } }
   .founder__text {
-    color: #fdfaff; }
+    color: #fdfaff;
+    grid-row: 2/3;
+    line-height: 3.2rem; }
+    @media only screen and (max-width: 58em) {
+      .founder__text {
+        font-size: 1.6rem;
+        line-height: 2.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .founder__text {
+        text-align: center; } }
   .founder__button {
     width: 19rem;
     height: 6.1rem; }
+    @media only screen and (max-width: 58em) {
+      .founder__button {
+        width: 17.2rem;
+        height: 5.5rem; } }
 
 .footer {
   background-color: white;
-  padding: 11rem;
   display: grid;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 11rem; }
+  @media only screen and (max-width: 58em) {
+    .footer {
+      padding-bottom: 6rem; } }
   .footer__content {
     max-width: 11.6rem;
     max-height: 10.3rem;
     display: grid;
     grid-template-columns: repeat(3, max-content);
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 3rem;
+    row-gap: 5rem;
     column-gap: 2rem;
     align-items: end; }
   .footer__logo {
