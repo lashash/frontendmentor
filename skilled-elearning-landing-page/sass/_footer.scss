@@ -1,0 +1,16 @@
+.footer {
+    margin: 0 auto;
+    padding: 0 16.5rem;
+    width: 144rem;
+    height: 12rem;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $Color-Bul-Dark;
+   
+    
+    &__button {
+        background-image: linear-gradient($Color-grad-2-1, $Color-grad-2-2);
+        
+    }
+}

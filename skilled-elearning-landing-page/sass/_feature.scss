@@ -1,0 +1,39 @@
+.features{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    column-gap: 3rem; 
+    // column-gap: 20rem;
+    row-gap: 8rem;    
+    // padding-top: 13.4rem;
+
+
+}
+
+.feature{
+    min-width: 35rem;    
+    min-height: 32.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    border-radius: 1.5rem; 
+    box-shadow: 0 2.5rem 5rem  rgba($Color-Bul-Dark, 0.04);
+    background-color: #fff;
+    padding: 0 3.2rem 4rem;
+    
+
+    &__svg{
+        transform: translateY(-50%);
+        width: 5.6rem;
+        height: 5.6rem;
+    }
+
+    &__1 {  
+        text-align: center;
+        padding: 6.4rem 3.2rem 13.8rem;     
+        background-image: linear-gradient($Color-grad-1-1, $Color-grad-1-2);      
+
+        
+    }
+}
