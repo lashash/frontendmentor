@@ -1,0 +1,44 @@
+.hero{
+    grid-column: center-start / center-end;
+    grid-row: 2/3;
+    padding-top: 18.56rem;
+    display: grid;
+    align-items: start;
+    grid-template-rows:  min-content 2.9rem min-content 4rem min-content;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 2.9rem;
+       
+        width: 45.7rem;
+       
+        
+    }
+
+    &__button-2{        
+        height: 6.3rem;
+        background-image: linear-gradient($Color-grad-1-1, $Color-grad-1-2);
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    &__picture {
+        position: relative;
+        grid-column: col-start 6 / center-end;
+        grid-row: 2/3;
+
+
+
+    }
+
+    &__img{
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 95%;
+        transform: translate(-50%, -50%);
+        
+    }
+}

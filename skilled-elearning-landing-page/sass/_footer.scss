@@ -1,14 +1,17 @@
 .footer {
-    margin: 0 auto;
-    padding: 0 16.5rem;
-    width: 144rem;
-    height: 12rem;  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: minmax(6rem, 1fr) minmax(111rem, 1fr) minmax(6rem, 1fr);     
     background-color: $Color-Bul-Dark;
-   
-    
+
+    &__content{
+        padding: 3.2rem 0;
+        grid-column: 2/3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }   
     &__button {
         background-image: linear-gradient($Color-grad-2-1, $Color-grad-2-2);
         
