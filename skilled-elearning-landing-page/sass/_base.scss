@@ -62,6 +62,15 @@ body {
         grid-template-columns:[full-start] minmax(2rem, 1fr)[center-start] repeat(10,[col-start] minmax(min-content, 10rem) [col-end])[center-end] minmax(2rem, 1fr) [full-end];
         
     }
+
+    @media screen and (max-width: $bp-small){             
+        grid-template-rows: repeat(5, min-content);
+        row-gap: 3rem;
+             
+
+    }
+
+    
     
 }
 

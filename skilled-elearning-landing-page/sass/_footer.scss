@@ -8,6 +8,10 @@
         grid-column: full-start / center-end;      
         
     }
+    @media screen and (max-width: $bp-small){             
+        grid-row: 5/6;
+
+    }
 
   
 

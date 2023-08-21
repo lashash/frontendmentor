@@ -2,19 +2,20 @@
     grid-column: center-start / center-end;
     grid-row: 1/2;
     padding-top: 2.4rem;
-    display: flex;
-    justify-content: space-between;  
+   
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
 
-    &__top{       
-
+    &__top{
         &--logo{
             display: block;
             width: 11.12rem;
             height: 2.7684rem;
             color: $Color-Bul-Dark;
-            
-            
 
+           
         }
 
         &--button{
@@ -25,8 +26,6 @@
               }
            
         }
-
-
     }
    
 

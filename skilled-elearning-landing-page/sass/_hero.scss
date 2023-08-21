@@ -12,6 +12,14 @@
         
     }
 
+    @media screen and (max-width: $bp-small){  
+        grid-row: 2/3;     
+        justify-self: center;
+
+    }
+
+    
+
     &__text{
         display: flex;
         flex-direction: column;
@@ -23,6 +31,11 @@
            max-width: 38rem;
             
         }
+
+        @media screen and (max-width: $bp-small){  
+            max-width: 34.3rem;           
+    
+        }   
        
         
     }
@@ -43,7 +56,18 @@
         grid-column: col-start 5 / center-end;
         grid-row: 2/3;
 
+
+        
+    @media screen and (max-width: $bp-small){  
+        grid-column: center-start / center-end;           
+        grid-row: 3/4;
+        grid-column: 1 /-1;
+        align-self: center;
+
     }
+
+    }
+
 
     &__image {         
         display: block;
@@ -51,6 +75,7 @@
         top: 40%;
         left: 95%;
         transform: translate(-50%, -50%);
+
 
 
         @media only screen and (max-width: $bp-large){
@@ -67,7 +92,15 @@
              
          }
 
-        
+         @media screen and (max-width: $bp-small){  
+            position: relative; 
+            display: block;          
+            top: 0;
+            left: 0;
+            transform: translate(0%, 0%);
+            
+    
+        }       
         
     }
 }

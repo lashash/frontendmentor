@@ -12,9 +12,13 @@
 </head>
 <body>
     <main class="container">
-        <div class="header">                           
+        <div class="header">
+            
+            <div class="header__content">
                <img src="img/logo-dark.svg" alt="logo img" class="header__top--logo">
                <button class="btn header__top--button">Get Started</button>
+
+            </div>
         </div>
               
         <section class="hero">
@@ -32,13 +36,14 @@
         <div class="hero__picture">
         <picture class="hero__image">
 
+            <source media="(max-width: 42.25em)" srcset="img/image-hero-mobile.webp 1x, img/image-hero-mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 42.25em)" srcset="img/image-hero-mobile.png 1x, img/image-hero-mobile@2x.png 2x" type="image/png">
+
             <source media="(max-width: 56.25em)" srcset="img/image-hero-tablet.webp 1x, img/image-hero-tablet@2x.webp 2x" type="image/webp">
             <source media="(max-width: 56.25em)" srcset="img/image-hero-tablet.png 1x, img/image-hero-tablet@2x.png 2x" type="image/png">
 
           <source srcset="img/image-hero-desktop.webp 1x, img/image-hero-desktop@2x.webp 2x" type="image/webp">
-          <img srcset="img/image-hero-desktop.png 1x, img/image-hero-desktop@2x.png 2x"alt="Hero image"> 
-          
-          
+          <img srcset="img/image-hero-desktop.png 1x, img/image-hero-desktop@2x.png 2x"alt="Hero image">         
         </picture>
                 
        </div> 
