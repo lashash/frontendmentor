@@ -4,7 +4,16 @@
     grid-template-columns: minmax(6rem, 1fr) minmax(111rem, 1fr) minmax(6rem, 1fr);     
     background-color: $Color-Bul-Dark;
 
-    &__content{
+    @media screen and (max-width: $bp-medium){
+        grid-column: full-start / center-end;      
+        
+    }
+
+  
+
+
+
+    &__content{        
         padding: 3.2rem 0;
         grid-column: 2/3;
         display: flex;

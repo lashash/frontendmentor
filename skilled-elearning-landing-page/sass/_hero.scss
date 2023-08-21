@@ -5,14 +5,24 @@
     display: grid;
     align-items: start;
     grid-template-rows:  min-content 2.9rem min-content 4rem min-content;
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: $bp-medium){
+        padding-top: 4rem;       
+        
+    }
 
     &__text{
         display: flex;
         flex-direction: column;
-        gap: 2.9rem;
-       
+        gap: 2.9rem;       
         width: 45.7rem;
+
+        @media screen and (max-width: $bp-medium){
+           gap: 2.5rem;
+           max-width: 38rem;
+            
+        }
        
         
     }
@@ -22,23 +32,42 @@
         background-image: linear-gradient($Color-grad-1-1, $Color-grad-1-2);
         grid-column: 1/2;
         grid-row: 3/4;
+
+        @media screen and (max-width: $bp-medium){
+            width: 16.7rem;            
+          }
     }
 
     &__picture {
         position: relative;
-        grid-column: col-start 6 / center-end;
+        grid-column: col-start 5 / center-end;
         grid-row: 2/3;
-
-
 
     }
 
-    &__img{
+    &__image {         
         display: block;
         position: absolute;
         top: 40%;
         left: 95%;
         transform: translate(-50%, -50%);
+
+
+        @media only screen and (max-width: $bp-large){
+            top: 20%;
+            left: 95%;
+            transform: translate(-40%, -40%);
+
+        }
+
+        @media screen and (max-width: $bp-medium){
+            top: 5%;
+            left: 80%;
+            transform: translate(-40%, -40%);
+             
+         }
+
+        
         
     }
 }
