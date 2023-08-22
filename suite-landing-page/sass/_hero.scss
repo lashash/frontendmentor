@@ -1,0 +1,81 @@
+.hero {
+    // height: 70vh;
+    // background-image: url(../img/image-hero-portrait.webp);
+    // background-repeat: no-repeat; 
+    // background-position: center;   
+    grid-column: center-start / center-end;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-rows: 10.3rem min-content 4rem min-content 5.2rem min-content;
+    grid-template-columns: repeat(2, 1fr) .5fr;
+    
+    
+    
+
+    &__text{
+        grid-row: 4/5;
+        max-width: 35rem;
+        color: $color-gray;
+        line-height: 3.2rem;
+        letter-spacing: 0.01rem;
+    }
+
+    &__stat--par{        
+        color: $color-gray;
+        line-height: 2.6rem;
+        letter-spacing: 0.25rem;
+        
+    }
+
+
+    &__button {
+        grid-row: 6/7;
+        width: 25.6rem;
+        height: 6.1rem;
+        border-radius: 0.6rem;
+        border: none;
+        background-color: $color-bule-dark;
+        color: $color-cream-white;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 3.2rem;
+        letter-spacing: -0.018rem;
+    }
+
+    &__img--line{
+        grid-row: 1/2;
+        grid-column: 1/span 2;
+        justify-self: center;
+        width: 28.7rem;
+        height: 3.6rem;
+        align-self: end;
+        position: relative;
+       
+
+    }
+
+    &__statistics{
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: 6.3rem;
+        grid-column: 3/4;
+        grid-row: 2/ -1;
+        position: relative;
+    }
+
+
+    &__picture{
+        grid-row: 1/-1;
+        grid-column: 2/3;
+        transform: translateX(6%);
+        position: relative;
+        
+        
+    }
+
+    &__image{         
+       
+    }    
+}

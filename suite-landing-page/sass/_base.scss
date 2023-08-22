@@ -29,12 +29,14 @@ html {
 body {
     font-family: 'Epilogue', sans-serif;         
     font-size: 1.8rem;
-    font-weight: 400;      
+    font-weight: 400; 
+         
 }
 
 .container {
     background-color: $color-cream-white;
     display: grid;
     grid-template-columns:[full-start] minmax(7rem, 1fr) [center-start] repeat( 10,[col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end];
+    
 }
 

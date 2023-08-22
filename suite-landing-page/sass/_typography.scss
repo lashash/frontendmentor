@@ -1,0 +1,28 @@
+.header{
+    &__1{
+        position: relative;        
+        grid-row: 2/3;
+        grid-column: 1/span 2;
+        color: $color-bule-dark;
+        font-size: 7.2rem; 
+        font-weight: 400;       
+        line-height: 7.8rem;
+        letter-spacing: -0.1rem;
+        max-width: 63.5rem;       
+        &--bold{                      
+            font-weight: 700;            
+        }
+    }
+    
+    &__2{
+        
+        color: $color-bule-dark;
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 5.6rem;
+        letter-spacing: -0.05rem;
+        
+    }  
+
+}
+

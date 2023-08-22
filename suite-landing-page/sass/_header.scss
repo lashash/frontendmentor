@@ -1,5 +1,13 @@
 .header{
-    padding-top: 5rem;
+    
+    grid-column: center-start / center-end;
+    grid-row: 1/2;
+    padding: 5rem 0 6.7rem 0;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &__logo{
         width: 7.84rem;
