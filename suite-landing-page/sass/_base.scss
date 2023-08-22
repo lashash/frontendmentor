@@ -1,3 +1,13 @@
+$color-bule-dark: hsl(219, 43%, 16%);
+$color-gray: hsl(218, 20%, 36%);
+$color-cream: hsl(30, 33%, 93%);
+$color-cream-white: hsl(30, 29%, 97%);
+
+$color-grad-1: hsl(31, 100%, 65%);
+$color-grad-2: hsl(292, 76%, 54%);
+$color-grad-3: hsl(264, 100%, 69%);
+
+
 $bp-small: 37.5em;
 $bp-medium: 58em;
 
@@ -20,5 +30,11 @@ body {
     font-family: 'Epilogue', sans-serif;         
     font-size: 1.8rem;
     font-weight: 400;      
+}
+
+.container {
+    background-color: $color-cream-white;
+    display: grid;
+    grid-template-columns:[full-start] minmax(7rem, 1fr) [center-start] repeat( 10,[col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end];
 }
 

@@ -1,0 +1,23 @@
+.header{
+    padding-top: 5rem;
+
+    &__logo{
+        width: 7.84rem;
+        height: 2.48rem;
+
+    }
+
+    &__button{
+        color: $color-bule-dark;        
+        background: none;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 3.2rem;
+        letter-spacing: -0.016rem;
+        width: 21.9rem;
+        height: 5.6rem;
+        border-radius: 0.6rem;
+        border: none;
+        outline: 2px solid $color-bule-dark;
+        }
+}

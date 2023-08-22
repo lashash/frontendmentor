@@ -13,3 +13,26 @@ body {
   font-family: 'Epilogue', sans-serif;
   font-size: 1.8rem;
   font-weight: 400; }
+
+.container {
+  background-color: #faf7f5;
+  display: grid;
+  grid-template-columns: [full-start] minmax(7rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end]; }
+
+.header {
+  padding-top: 5rem; }
+  .header__logo {
+    width: 7.84rem;
+    height: 2.48rem; }
+  .header__button {
+    color: #17243a;
+    background: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: -0.016rem;
+    width: 21.9rem;
+    height: 5.6rem;
+    border-radius: 0.6rem;
+    border: none;
+    outline: 2px solid #17243a; }
