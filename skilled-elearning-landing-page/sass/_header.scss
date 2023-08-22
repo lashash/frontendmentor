@@ -15,6 +15,9 @@
             height: 2.7684rem;
             color: $Color-Bul-Dark;
 
+            @media screen and (max-width: $bp-medium){
+                width: 8.9rem;              
+              }
            
         }
 
@@ -23,7 +26,10 @@
 
             @media screen and (max-width: $bp-medium){                
                 height: 4.8rem;
-              }
+              }               
+              &:hover{
+                background-color: $Color-Bul-Light;
+            } 
            
         }
     }

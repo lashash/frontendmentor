@@ -1,32 +1,27 @@
-.footer {
-    grid-column: full-start / full-end;
-    display: grid;
-    grid-template-columns: minmax(6rem, 1fr) minmax(111rem, 1fr) minmax(6rem, 1fr);     
-    background-color: $Color-Bul-Dark;
+.footer {    
+        grid-column: full-start / full-end;
+        display: grid;
+        grid-template-columns: minmax(6rem, 1fr) minmax(111rem, 1fr) minmax(6rem, 1fr);     
+        background-color: $Color-Bul-Dark;   
+
+        @media screen and (max-width: 75em) {
+        grid-template-columns: minmax(6rem, 1fr) minmax(75rem, 1fr) minmax(6rem, 1fr);         
+    }
 
     @media screen and (max-width: $bp-medium){
-        grid-column: full-start / center-end;      
-        
+        grid-template-columns: 3rem  1fr 3rem;        
     }
-    @media screen and (max-width: $bp-small){             
-        grid-row: 5/6;
-
-    }
-
-  
-
-
-
-    &__content{        
+        &__content{        
         padding: 3.2rem 0;
         grid-column: 2/3;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }   
     &__button {
         background-image: linear-gradient($Color-grad-2-1, $Color-grad-2-2);
-        
+        &:hover{
+            background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+        }       
     }
 }
