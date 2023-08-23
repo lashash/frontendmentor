@@ -4,7 +4,12 @@
     grid-column: full-start/full-end;
     background-color: $color-cream;
     display: grid;
-    grid-template-columns:[full-start] minmax(7rem, 1fr) [center-start] repeat( 10,[col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end];  ;
+    grid-template-columns:[full-start] minmax(7rem, 1fr) [center-start] repeat( 10,[col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end]; 
+    @media only screen and (max-width: $bp-medium){
+        grid-row: 5/6;
+        
+    }
+    
 
 
     &__content{        
@@ -13,6 +18,10 @@
         justify-content: space-between;
         align-items: end;
         padding-bottom: 7.2rem;
+
+        @media only screen and (max-width: $bp-medium){
+            height: 40rem;
+        }
        
     }
 

@@ -1,7 +1,6 @@
 .feature{
     grid-row: 3/4;
-    grid-column: center-start / center-end;
-    // background-color: $color-bule-dark;
+    grid-column: center-start / center-end;    
     border-radius: 1.5rem;    
     background-repeat: no-repeat;
     position: relative;
@@ -10,8 +9,14 @@
     display: grid;
     grid-template-columns: min-content 3.6rem min-content 5.3rem min-content;
     justify-content: center;
-    // background-color: $color-bule-dark;
     
+    @media only screen and (max-width: $bp-medium){
+        grid-row: 4/5;
+        grid-template-rows: repeat(4 min-content);
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+        justify-items: center;
+    }
     
 
     &::before{
@@ -29,10 +34,22 @@
         background-repeat: no-repeat;
         background-position-y: 10rem;
         border-bottom: none;
+
+        @media only screen and (max-width: $bp-medium){
+            top: 18.1rem;
+            left: 0;
+            background-position-y: -20rem;
+            background-position-x: 9rem;
+            
+        }
     }
 
     &__picture{
         grid-column: 1/2;
+
+        @media only screen and (max-width: $bp-medium){
+            grid-row: 1/2;
+        }
         
     }
 
@@ -48,6 +65,13 @@
         display: flex;
         flex-direction: column;
         gap: 4rem;
+
+        @media only screen and (max-width: $bp-medium){
+            grid-row: 3/4;
+            grid-column: 1/2;
+            align-items: center;  
+            max-width: 57.3rem;          
+        }
     }
 
     &__header{
@@ -63,6 +87,13 @@
         grid-column: 3/4;
         align-self: center;
         transform: translateY(-150%);
+
+        @media only screen and (max-width: $bp-medium){
+            grid-row: 2/3;
+            grid-column: 1/2; 
+            transform: translateY(0%);         
+
+        }
     }
 
     &__p{
@@ -70,6 +101,11 @@
         color: $color-cream;
         line-height: 3.5rem;
         letter-spacing: 0.01rem;
+        @media only screen and (max-width: $bp-medium){
+            font-size: 1.8rem;
+            
+            
+        }
        
 
     }

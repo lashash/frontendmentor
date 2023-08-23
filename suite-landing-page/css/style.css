@@ -50,6 +50,11 @@ body {
   font-weight: 700;
   line-height: 5.6rem;
   letter-spacing: -0.05rem; }
+  @media only screen and (max-width: 58em) {
+    .header__2 {
+      font-size: 4rem;
+      line-height: 4.8rem;
+      letter-spacing: -0.0417rem; } }
 
 .header__4 {
   font-size: 1.8rem;
@@ -111,6 +116,13 @@ body {
   display: grid;
   grid-template-columns: min-content 3.6rem min-content 5.3rem min-content;
   justify-content: center; }
+  @media only screen and (max-width: 58em) {
+    .feature {
+      grid-row: 4/5;
+      grid-template-rows: repeat(4 min-content);
+      grid-template-columns: 1fr;
+      row-gap: 4rem;
+      justify-items: center; } }
   .feature::before {
     content: "";
     top: 4.46rem;
@@ -125,8 +137,17 @@ body {
     background-repeat: no-repeat;
     background-position-y: 10rem;
     border-bottom: none; }
+    @media only screen and (max-width: 58em) {
+      .feature::before {
+        top: 18.1rem;
+        left: 0;
+        background-position-y: -20rem;
+        background-position-x: 9rem; } }
   .feature__picture {
     grid-column: 1/2; }
+    @media only screen and (max-width: 58em) {
+      .feature__picture {
+        grid-row: 1/2; } }
   .feature__image {
     height: 54.5rem; }
   .feature__text {
@@ -136,6 +157,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4rem; }
+    @media only screen and (max-width: 58em) {
+      .feature__text {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        align-items: center;
+        max-width: 57.3rem; } }
   .feature__header {
     color: #faf7f5;
     font-weight: 400; }
@@ -145,11 +172,19 @@ body {
     grid-column: 3/4;
     align-self: center;
     transform: translateY(-150%); }
+    @media only screen and (max-width: 58em) {
+      .feature__line--img {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        transform: translateY(0%); } }
   .feature__p {
     font-size: 2rem;
     color: #f3ede7;
     line-height: 3.5rem;
     letter-spacing: 0.01rem; }
+    @media only screen and (max-width: 58em) {
+      .feature__p {
+        font-size: 1.8rem; } }
 
 .footer {
   height: 46rem;
@@ -158,12 +193,18 @@ body {
   background-color: #f3ede7;
   display: grid;
   grid-template-columns: [full-start] minmax(7rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 58em) {
+    .footer {
+      grid-row: 5/6; } }
   .footer__content {
     grid-column: center-start / center-end;
     display: flex;
     justify-content: space-between;
     align-items: end;
     padding-bottom: 7.2rem; }
+    @media only screen and (max-width: 58em) {
+      .footer__content {
+        height: 40rem; } }
   .footer__logo {
     width: 8.1rem;
     height: 3.2rem; }
