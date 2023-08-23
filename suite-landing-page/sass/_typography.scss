@@ -8,7 +8,16 @@
         font-weight: 400;       
         line-height: 7.8rem;
         letter-spacing: -0.1rem;
-        max-width: 63.5rem;       
+        max-width: 63.5rem;
+        
+        
+        @media only screen and (max-width: $bp-medium){
+          font-size: 5.6rem; 
+          letter-spacing: -0.0778rem; 
+          line-height: 6.4rem;
+          max-width: 52.3rem;       
+
+        }
         &--bold{                      
             font-weight: 700;            
         }
@@ -23,6 +32,23 @@
         letter-spacing: -0.05rem;
         
     }  
+
+    &__4{
+        font-size: 1.8rem;
+        color: $color-cream-white;
+        font-weight: 700;
+        line-height: 3.2rem;
+        letter-spacing: -0.018rem;
+    }
+
+    &__5{
+        letter-spacing: 0.25rem;
+        color: $color-cream;
+        font-size: 1.6rem;
+        font-weight: 400;
+
+
+    }
 
 }
 

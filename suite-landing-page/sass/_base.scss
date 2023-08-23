@@ -10,6 +10,7 @@ $color-grad-3: hsl(264, 100%, 69%);
 
 $bp-small: 37.5em;
 $bp-medium: 58em;
+$bp-large: 64rem;
 
 
 
@@ -23,20 +24,31 @@ $bp-medium: 58em;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px    
+    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px   
+    
+ 
 }
 
 body {
     font-family: 'Epilogue', sans-serif;         
     font-size: 1.8rem;
     font-weight: 400; 
+    background-color: $color-cream-white;;
          
 }
 
 .container {
-    background-color: $color-cream-white;
+   
     display: grid;
     grid-template-columns:[full-start] minmax(7rem, 1fr) [center-start] repeat( 10,[col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end];
-    grid-template-rows: min-content 3.5fr 1fr;
+
+    @media only screen and (max-width: $bp-large){
+        grid-template-columns:[full-start] minmax(2rem, 1fr) [center-start] repeat( 10,[col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        grid-template-columns:[full-start] minmax(3.9rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 7rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+        
+    }
 }
 
