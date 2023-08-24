@@ -33,7 +33,8 @@ body {
     font-family: 'Epilogue', sans-serif;         
     font-size: 1.8rem;
     font-weight: 400; 
-    background-color: $color-cream-white;;
+    background-color: $color-cream-white;
+    
          
 }
 
@@ -50,5 +51,6 @@ body {
         grid-template-columns:[full-start] minmax(3.9rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 7rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
         
     }
+   
 }
 

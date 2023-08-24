@@ -16,12 +16,13 @@
         grid-template-columns: 1fr;
         row-gap: 4rem;
         justify-items: center;
+        transform: translateY(14.4rem);
     }
     
 
     &::before{
         content: "";
-        // bottom: 0;
+        
         top: 4.46rem;
         left: 0;
         height: 92%;
@@ -38,6 +39,8 @@
         @media only screen and (max-width: $bp-medium){
             top: 18.1rem;
             left: 0;
+            bottom: 0;
+            height: 80%;
             background-position-y: -20rem;
             background-position-x: 9rem;
             
