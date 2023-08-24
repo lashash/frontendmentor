@@ -1,12 +1,12 @@
 .footer{
-    min-height: 46rem;
+   height: 46rem;
     grid-row: 4/5;
     grid-column: full-start/full-end;
     background-color: $color-cream;
     display: grid;
     grid-template-columns:[full-start] minmax(7rem, 1fr) [center-start] repeat( 10,[col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end]; 
     @media only screen and (max-width: $bp-medium){
-        min-height: 64rem;
+        height: 64rem;
         grid-row: 5/6;
         margin-top: -39.3%; 
         align-content: end;
