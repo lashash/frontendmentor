@@ -218,7 +218,17 @@ body {
   .footer__social--media {
     width: 11.6rem;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    cursor: pointer; }
+
+.facebook:hover {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%); }
+
+.twitter:hover {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%); }
+
+.instagram:hover {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%); }
 
 .hero {
   grid-column: center-start / center-end;
