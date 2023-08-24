@@ -1,0 +1,81 @@
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+
+$transparent-white: hsla(0, 0%, 100%, 0.75); //(paragraphs)
+$very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+
+$bp-small: 58.25em;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px   
+    
+ 
+}
+
+body {    
+    font-family: 'Lexend Deca', sans-serif;      
+    font-size: 1.5rem;
+    font-weight: 400;          
+}
+
+
+
+.cards{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+    &__content{
+        max-width: 92rem;
+        display: flex; 
+        border-radius: 0.8rem;
+        overflow: hidden;
+
+        @media only screen and (max-width: $bp-small){
+            flex-direction: column;
+            max-width: 32.7rem;
+        }
+            
+       
+    }
+}
+
+.card{
+    padding: 4.8rem;
+   position: relative;
+
+    &__1{
+        background-color: $bright-orange;
+
+    }
+
+    &__2{
+        background-color: $dark-cyan;
+
+
+    }
+
+    &__3{
+        background-color: $very-dark-cyan;
+
+
+    }
+
+
+}
+
