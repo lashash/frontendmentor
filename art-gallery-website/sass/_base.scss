@@ -1,17 +1,11 @@
+$color-gold: rgb(213, 150, 108);
+$color-black: rgb(21, 21, 21);
+$text-color: rgb(68, 68, 68);
+$color-white: rgb(255, 255, 255);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+$bp-small: 42.25em;
+$bp-medium: 56.25em;
+$bp-large: 120em;
 
 
 
@@ -34,5 +28,12 @@ body {
     font-family: 'Outfit', sans-serif;        
     font-size: 2.2rem;
     font-weight: 300;         
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns:[full-start] minmax(16.5rem, 1fr)[center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(16.5rem, 1fr) [full-end];
 }
 

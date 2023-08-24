@@ -13,3 +13,22 @@ body {
   font-family: 'Outfit', sans-serif;
   font-size: 2.2rem;
   font-weight: 300; }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(16.5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(16.5rem, 1fr) [full-end]; }
+
+.hero {
+  grid-column: full-start/center-end;
+  display: grid;
+  grid-template-columns: 1fr min-content .5fr; }
+  .hero__black {
+    grid-column: 1/2;
+    min-width: 45rem;
+    background-color: #151515; }
+  .hero__image {
+    width: 30vw;
+    grid-column: 2/3; }
+    .hero__image--main {
+      display: block;
+      width: 100%; }
