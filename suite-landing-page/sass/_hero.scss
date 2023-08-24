@@ -11,19 +11,30 @@
 
     @media only screen and (max-width: $bp-medium){
         grid-template-columns:  35rem min-content;
-        grid-template-rows: 8.8rem min-content 4rem min-content 4rem min-content;
-        
+        grid-template-rows: 8.8rem min-content 4rem min-content 4rem min-content;        
     }
+
+    @media only screen and (max-width: $bp-small){        
+        grid-template-rows: repeat(2, min-content) 3.2rem min-content 3.2rem min-content 5.6rem min-content 5.6rem 24rem; 
+        padding: 0 1.6rem;       
+    }
+
+
     &__text{
         grid-row: 4/5;
         max-width: 35rem;
         color: $color-gray;
         line-height: 3.2rem;
         letter-spacing: 0.01rem;
+
         @media only screen and (max-width: $bp-medium){
             font-size: 1.6rem; 
             letter-spacing: 0.0089rem; 
             line-height: 2.8rem; 
+          }
+
+          @media only screen and (max-width: $bp-small){
+            max-width: 34.3rem; 
           }
     }
 
@@ -48,7 +59,7 @@
         cursor: pointer;
         &:hover{            
             background-image: linear-gradient(135deg, $color-grad-3 0%, $color-grad-2 49.21%, $color-grad-1 100%);
-        }
+        }     
     }
 
     &__img--line{
@@ -66,6 +77,15 @@
             height: 2.9rem;
             transform: translateX(-55%);
         }
+
+        @media only screen and (max-width: $bp-small){
+            grid-row: 1/2;
+            grid-column: 1/2;
+            justify-self: end;
+            transform: translateX(-30%);
+            width: 15.15rem;
+            height: 1.9rem;
+          }
 
 
     }
@@ -87,7 +107,17 @@
             flex-direction: row;            
             transform: translateX(0%);           
             gap: 10rem;
-        }       
+        }   
+        
+        @media only screen and (max-width: $bp-small){
+            // grid-row: 8/9;
+            grid-row: 10/11;
+            grid-column: 1/2;
+            flex-direction: column;
+            gap: 3.2rem;
+            justify-items: flex-start;
+            margin-top: 0;
+          }
     } 
     
     &__stat{ 
@@ -113,10 +143,19 @@
         height: 48.2rem;
         justify-self: end;        
         }
+
+        @media only screen and (max-width: $bp-small){
+            // grid-row: 10/11;
+            grid-row: 8/9;
+            grid-column: 1/2;
+            justify-self: center;
+            max-height: 24rem;            
+          }
     }
 
     &__img{
         width: 100%;
+        
     }
 
 }

@@ -24,6 +24,9 @@ body {
   @media only screen and (max-width: 58em) {
     .container {
       grid-template-columns: [full-start] minmax(3.9rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 7rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end]; } }
+  @media only screen and (max-width: 42em) {
+    .container {
+      grid-template-columns: [full-start] minmax(0rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 3.75rem) [col-end]) [center-end] minmax(0rem, 1fr) [full-end]; } }
 
 .header__1 {
   position: relative;
@@ -43,6 +46,12 @@ body {
       max-width: 52.3rem; } }
   .header__1--bold {
     font-weight: 700; }
+  @media only screen and (max-width: 42em) {
+    .header__1 {
+      font-size: 3.8rem;
+      line-height: 4.4rem;
+      letter-spacing: -0.0528rem;
+      grid-column: 1/2; } }
 
 .header__2 {
   color: #17243a;
@@ -75,6 +84,15 @@ body {
   line-height: 3.2rem;
   letter-spacing: 0.0083rem; }
 
+.facebook:hover {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%); }
+
+.twitter:hover {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%); }
+
+.instagram:hover {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%); }
+
 .header {
   grid-column: center-start / center-end;
   grid-row: 1/2;
@@ -85,9 +103,12 @@ body {
   @media only screen and (max-width: 58em) {
     .header {
       padding: 4rem 0 8rem 0; } }
+  @media only screen and (max-width: 42em) {
+    .header {
+      padding: 2.4rem 1.6rem 5.6rem; } }
   .header__logo {
-    width: 7.84rem;
-    height: 2.48rem; }
+    width: 8.1rem;
+    height: 3.2rem; }
   .header__button {
     color: #17243a;
     background: none;
@@ -104,6 +125,13 @@ body {
     .header__button:hover {
       color: #faf7f5;
       background-color: #17243a; }
+    @media only screen and (max-width: 42em) {
+      .header__button {
+        width: 18.2rem;
+        height: 4.8rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        letter-spacing: -0.014rem; } }
 
 .feature {
   grid-row: 3/4;
@@ -166,7 +194,8 @@ body {
         grid-row: 3/4;
         grid-column: 1/2;
         align-items: center;
-        max-width: 57.3rem; } }
+        max-width: 57.3rem;
+        font-size: 1.8rem; } }
   .feature__header {
     color: #faf7f5;
     font-weight: 400; }
@@ -189,6 +218,13 @@ body {
     @media only screen and (max-width: 58em) {
       .feature__p {
         font-size: 1.8rem; } }
+    @media only screen and (max-width: 42em) {
+      .feature__p {
+        text-align: center;
+        max-width: 34rem; } }
+  @media only screen and (max-width: 58em) {
+    .feature__text--footer {
+      text-align: center; } }
 
 .footer {
   height: 46rem;
@@ -203,6 +239,9 @@ body {
       grid-row: 5/6;
       margin-top: -39.3%;
       align-content: end; } }
+  @media only screen and (max-width: 42em) {
+    .footer {
+      grid-template-columns: [full-start] minmax(0rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(0rem, 1fr) [full-end]; } }
   .footer__content {
     grid-column: center-start / center-end;
     display: flex;
@@ -212,6 +251,12 @@ body {
     @media only screen and (max-width: 58em) {
       .footer__content {
         height: 40rem; } }
+    @media only screen and (max-width: 42em) {
+      .footer__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 3.3rem; } }
   .footer__logo {
     width: 8.1rem;
     height: 3.2rem; }
@@ -220,15 +265,6 @@ body {
     display: flex;
     justify-content: space-between;
     cursor: pointer; }
-
-.facebook:hover {
-  filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%); }
-
-.twitter:hover {
-  filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%); }
-
-.instagram:hover {
-  filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%); }
 
 .hero {
   grid-column: center-start / center-end;
@@ -240,6 +276,10 @@ body {
     .hero {
       grid-template-columns: 35rem min-content;
       grid-template-rows: 8.8rem min-content 4rem min-content 4rem min-content; } }
+  @media only screen and (max-width: 42em) {
+    .hero {
+      grid-template-rows: repeat(2, min-content) 3.2rem min-content 3.2rem min-content 5.6rem min-content 5.6rem 24rem;
+      padding: 0 1.6rem; } }
   .hero__text {
     grid-row: 4/5;
     max-width: 35rem;
@@ -251,6 +291,9 @@ body {
         font-size: 1.6rem;
         letter-spacing: 0.0089rem;
         line-height: 2.8rem; } }
+    @media only screen and (max-width: 42em) {
+      .hero__text {
+        max-width: 34.3rem; } }
   .hero__stat--par {
     color: #49576e;
     line-height: 2.6rem;
@@ -284,6 +327,14 @@ body {
         width: 23.1rem;
         height: 2.9rem;
         transform: translateX(-55%); } }
+    @media only screen and (max-width: 42em) {
+      .hero__img--line {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-self: end;
+        transform: translateX(-30%);
+        width: 15.15rem;
+        height: 1.9rem; } }
   .hero__statistics {
     justify-self: center;
     display: flex;
@@ -301,6 +352,14 @@ body {
         flex-direction: row;
         transform: translateX(0%);
         gap: 10rem; } }
+    @media only screen and (max-width: 42em) {
+      .hero__statistics {
+        grid-row: 10/11;
+        grid-column: 1/2;
+        flex-direction: column;
+        gap: 3.2rem;
+        justify-items: flex-start;
+        margin-top: 0; } }
   @media only screen and (max-width: 58em) {
     .hero__stat {
       display: flex;
@@ -318,5 +377,11 @@ body {
         width: 28.1rem;
         height: 48.2rem;
         justify-self: end; } }
+    @media only screen and (max-width: 42em) {
+      .hero__image {
+        grid-row: 8/9;
+        grid-column: 1/2;
+        justify-self: center;
+        max-height: 24rem; } }
   .hero__img {
     width: 100%; }

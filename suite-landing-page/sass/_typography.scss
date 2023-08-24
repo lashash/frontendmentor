@@ -21,7 +21,17 @@
         &--bold{                      
             font-weight: 700;            
         }
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 3.8rem;
+            line-height: 4.4rem;
+            letter-spacing: -0.0528rem;
+            grid-column: 1/2;
+            
+          }    
     }
+
+    
     
     &__2{
         
@@ -67,5 +77,24 @@
     letter-spacing: 0.0083rem;
 
 
+}
+
+
+.facebook{
+    &:hover{
+        filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%);
+    }
+}
+
+.twitter{
+    &:hover{
+        filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%);
+    }
+}
+
+.instagram {
+    &:hover{
+        filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(954%) hue-rotate(180deg) brightness(99%) contrast(85%);
+    }
 }
 

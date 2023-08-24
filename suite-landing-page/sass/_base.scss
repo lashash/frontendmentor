@@ -8,7 +8,7 @@ $color-grad-2: hsl(292, 76%, 54%);
 $color-grad-3: hsl(264, 100%, 69%);
 
 
-$bp-small: 37.5em;
+$bp-small: 42em;
 $bp-medium: 58em;
 $bp-large: 64rem;
 
@@ -34,7 +34,7 @@ body {
     font-size: 1.8rem;
     font-weight: 400; 
     background-color: $color-cream-white;
-    
+
          
 }
 
@@ -49,6 +49,11 @@ body {
 
     @media only screen and (max-width: $bp-medium){
         grid-template-columns:[full-start] minmax(3.9rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 7rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+        
+    }
+
+    @media only screen and (max-width: $bp-small){
+        grid-template-columns:[full-start] minmax(0rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 3.75rem) [col-end]) [center-end] minmax(0rem, 1fr) [full-end];
         
     }
    
