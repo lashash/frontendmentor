@@ -90,9 +90,13 @@ body {
     flex-direction: column;
     gap: 6.4rem; }
 
+.feature {
+  grid-row: 2/3;
+  grid-column: center-start / center-end; }
+
 .hero {
   grid-column: full-start/full-end;
-  grid-row: 1/span 3;
+  grid-row: 1/2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #151515;

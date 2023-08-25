@@ -1,7 +1,7 @@
 .hero{   
    
    grid-column: full-start/full-end;  
-   grid-row: 1/span 3; 
+   grid-row: 1/2; 
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    background-color: $color-black;
