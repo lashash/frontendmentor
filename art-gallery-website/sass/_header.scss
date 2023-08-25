@@ -1,12 +1,12 @@
 .header{
     grid-row: 1/2;
     grid-column: center-start / center-end; 
-
     display: flex;
     gap: 24.6rem;
     padding-top: 19rem;
     
     &__1{
+        max-height: 17.6rem;
 
 
     }

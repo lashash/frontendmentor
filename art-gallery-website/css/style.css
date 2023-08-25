@@ -19,6 +19,9 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(16.5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(16.5rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 100rem) {
+    .container {
+      grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end]; } }
 
 .header__1 {
   text-transform: uppercase;
@@ -80,6 +83,8 @@ body {
   display: flex;
   gap: 24.6rem;
   padding-top: 19rem; }
+  .header__1 {
+    max-height: 17.6rem; }
   .header__content {
     display: flex;
     flex-direction: column;
