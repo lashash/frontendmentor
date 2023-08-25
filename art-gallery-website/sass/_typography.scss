@@ -1,0 +1,75 @@
+.header{      
+
+    &__1{              
+        text-transform: uppercase;
+        font-weight: 900;             
+        font-size: 9.6rem;
+        font-family: Big Shoulders Display; 
+        color: $color-white; 
+        mix-blend-mode: difference;      
+        font-size: 9.6rem;
+        font-style: normal;       
+        line-height: 8.8rem;      
+    }
+}
+
+.main__text{
+    max-width:35rem;
+}
+
+.btn{
+ 
+ &,
+ &:link,
+ &:visited {
+ text-transform: uppercase;
+ text-decoration: none;
+ border: none;
+ cursor: pointer;                                                                                         
+}
+
+&__text{
+    display: inline-block;
+    background-color: $color-black;
+    width: 20.4rem;
+    height: 7.2rem;
+    font-family: Big Shoulders Display;
+    letter-spacing: 0.3636rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover~.btn__arrow{
+        background-color: $color-black;
+    }
+
+    &:hover{
+        background-color: $color-gold;
+    }
+}
+
+&__arrow{
+    display: inline-block;
+    width: 5.6rem;
+    height: 7.2rem;
+    background-color: $color-gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        background-color: $color-black;
+    }
+}
+}
+
+.button{
+    display: flex;    
+    &:hover .btn__text{
+        background-color: $color-gold;
+    }   
+    
+}

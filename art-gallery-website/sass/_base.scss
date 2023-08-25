@@ -25,15 +25,22 @@ html {
 }
 
 body {
+    
     font-family: 'Outfit', sans-serif;        
     font-size: 2.2rem;
-    font-weight: 300;         
+    font-weight: 300;
+    color: $text-color;
+    line-height: 3.2rem;
+
+          
 }
 
 
 
 .container{
     display: grid;
-    grid-template-columns:[full-start] minmax(16.5rem, 1fr)[center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(16.5rem, 1fr) [full-end];
+    grid-template-columns:[full-start] minmax(16.5rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(16.5rem, 1fr) [full-end];
+   
 }
+
 

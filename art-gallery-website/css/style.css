@@ -12,23 +12,87 @@ html {
 body {
   font-family: 'Outfit', sans-serif;
   font-size: 2.2rem;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #444444;
+  line-height: 3.2rem; }
 
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(16.5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(16.5rem, 1fr) [full-end]; }
 
-.hero {
-  grid-column: full-start/center-end;
-  display: grid;
-  grid-template-columns: 1fr min-content .5fr; }
-  .hero__black {
-    grid-column: 1/2;
-    min-width: 45rem;
+.header__1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 9.6rem;
+  font-family: Big Shoulders Display;
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 9.6rem;
+  font-style: normal;
+  line-height: 8.8rem; }
+
+.main__text {
+  max-width: 35rem; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer; }
+
+.btn__text {
+  display: inline-block;
+  background-color: #151515;
+  width: 20.4rem;
+  height: 7.2rem;
+  font-family: Big Shoulders Display;
+  letter-spacing: 0.3636rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .btn__text:hover ~ .btn__arrow {
     background-color: #151515; }
+  .btn__text:hover {
+    background-color: #d5966c; }
+
+.btn__arrow {
+  display: inline-block;
+  width: 5.6rem;
+  height: 7.2rem;
+  background-color: #d5966c;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .btn__arrow:hover {
+    background-color: #151515; }
+
+.button {
+  display: flex; }
+  .button:hover .btn__text {
+    background-color: #d5966c; }
+
+.header {
+  grid-row: 1/2;
+  grid-column: center-start / center-end;
+  display: flex;
+  gap: 24.6rem;
+  padding-top: 19rem; }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem; }
+
+.hero {
+  grid-column: full-start/full-end;
+  grid-row: 1/span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #151515;
+  background-image: linear-gradient(to left, white 50%, #151515 50%); }
   .hero__image {
-    width: 30vw;
     grid-column: 2/3; }
     .hero__image--main {
-      display: block;
-      width: 100%; }
+      display: block; }

@@ -1,0 +1,28 @@
+.header{
+    grid-row: 1/2;
+    grid-column: center-start / center-end; 
+
+    display: flex;
+    gap: 24.6rem;
+    padding-top: 19rem;
+    
+    &__1{
+
+
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 6.4rem;
+
+
+    }
+}
+
+
+
+
+
+
+
