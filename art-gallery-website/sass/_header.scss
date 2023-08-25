@@ -2,7 +2,7 @@
     grid-row: 1/2;
     grid-column: center-start / center-end; 
     display: flex;
-    gap: 24.6rem;
+    justify-content: space-between;
     padding-top: 19rem;
     
     &__main{

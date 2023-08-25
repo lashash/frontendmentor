@@ -2,4 +2,80 @@
 
     grid-row: 2/3;
     grid-column: center-start / center-end; 
+
+
+
+
+
+
+    &__text {
+
+        &--1{
+            
+            
+            max-width: 44.5rem;
+            min-height: 40rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 3.2rem;
+
+
+        }
+
+        &--2 {
+
+            
+            max-width: 44.5rem;
+            min-height: 37.7rem;            
+            background-color: $color-black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 3.2rem;
+
+        }
+
+
+    }
+
+
+
+
+    &__image{
+        
+
+        &--1{
+            
+            display: block;
+
+
+        }
+
+        &--2{
+            
+            display: block;
+            
+        }
+
+        &--3{
+           
+            display: block;
+            
+        }
+
+
+    }
+
+    &__h2--2{
+        color: #fff;
+    }
+
+    &__p--2{
+        color: #fff;
+    }
+
+
 }

@@ -19,9 +19,6 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(16.5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(16.5rem, 1fr) [full-end]; }
-  @media only screen and (max-width: 100rem) {
-    .container {
-      grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end]; } }
 
 .header__1 {
   text-transform: uppercase;
@@ -33,6 +30,16 @@ body {
   font-size: 9.6rem;
   font-style: normal;
   line-height: 8.8rem; }
+
+.header__2 {
+  max-width: 35rem;
+  color: #151515;
+  font-family: Big Shoulders Display;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 6rem;
+  text-transform: uppercase; }
 
 .main__text {
   max-width: 35rem; }
@@ -81,7 +88,7 @@ body {
   grid-row: 1/2;
   grid-column: center-start / center-end;
   display: flex;
-  gap: 24.6rem;
+  justify-content: space-between;
   padding-top: 19rem; }
   .header__main {
     display: block;
@@ -94,6 +101,33 @@ body {
 .feature {
   grid-row: 2/3;
   grid-column: center-start / center-end; }
+  .feature__text--1 {
+    max-width: 44.5rem;
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3.2rem; }
+  .feature__text--2 {
+    max-width: 44.5rem;
+    min-height: 37.7rem;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.2rem; }
+  .feature__image--1 {
+    display: block; }
+  .feature__image--2 {
+    display: block; }
+  .feature__image--3 {
+    display: block; }
+  .feature__h2--2 {
+    color: #fff; }
+  .feature__p--2 {
+    color: #fff; }
 
 .hero {
   grid-column: full-start/full-end;
@@ -101,7 +135,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #151515;
-  background-image: linear-gradient(to left, white 50%, #151515 50%); }
+  background-image: linear-gradient(to left, white 50%, #151515 50%);
+  justify-items: center; }
   .hero__image {
     grid-column: 2/3; }
     .hero__image--main {

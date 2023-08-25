@@ -39,9 +39,9 @@ body {
     display: grid;
     grid-template-columns:[full-start] minmax(16.5rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(16.5rem, 1fr) [full-end];
 
-    @media only screen and(max-width: 100rem){
-        grid-template-columns:[full-start] minmax(5rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(5rem, 1fr) [full-end];
-    }
+    // @media only screen and(max-width: 100rem){
+    //     grid-template-columns:[full-start] minmax(5rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(5rem, 1fr) [full-end];
+    // }
    
 }
 

@@ -11,6 +11,17 @@
         font-style: normal;       
         line-height: 8.8rem;      
     }
+
+    &__2{
+        max-width: 35rem;
+        color: $color-black;
+        font-family: Big Shoulders Display;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 6rem; 
+        text-transform: uppercase;
+    }
 }
 
 .main__text{
