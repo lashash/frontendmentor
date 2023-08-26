@@ -5,19 +5,17 @@
     justify-content: space-between;
     padding-top: 19rem;
     
-    &__main{
-        display: block;
-        max-height: 17.6rem;
-
-
-    }
+   
 
     &__content{
         display: flex;
         flex-direction: column;
         gap: 6.4rem;
+    }
 
-
+    &__main--text{
+        max-width:35rem;
+    min-height: 16rem;
     }
 }
 

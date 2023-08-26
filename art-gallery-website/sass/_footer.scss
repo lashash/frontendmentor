@@ -1,0 +1,50 @@
+.footer{
+    grid-row: 3/4;
+    grid-column: full-start / full-end;    
+    background-color: $color-black;
+    display: grid;
+    grid-template-columns:[full-start] minmax(3rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(3rem, 1fr) [full-end];
+
+    &__content{
+        height: 24.4rem;
+        grid-column: center-start / center-end;  
+        display: flex;  
+        align-items: center;
+        gap: 14rem; 
+        justify-content: space-between;
+    }
+
+    &__image{
+        min-width: 16rem;
+        min-height: 5.8rem;
+    }
+
+    &__logo{
+        width: 100%;
+    }
+
+    &__text{
+        max-width: 43rem;
+        max-height: 24.4rem;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2.8rem;  
+    }
+    &__social{
+        min-width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding-left: 14rem;
+
+     
+        &--icon{
+            &:hover{
+                filter: brightness(0) saturate(100%) invert(56%) sepia(63%) saturate(284%) hue-rotate(341deg) brightness(100%) contrast(93%);
+            }
+            cursor: pointer;
+        }    
+    }
+}
