@@ -1,6 +1,6 @@
 .location__feature{
     // min-height: 54.8rem;
-    padding: 10rem 0 12rem;
+    padding: 0 0 12rem;
     grid-column: full-start / full-end;
     background-color: $color-black;
     display: grid;
@@ -20,7 +20,7 @@
         grid-column: center-start / center-end;
         display: flex;
         justify-content: space-between;
-        padding-top: 5rem;
+        padding-top: 10rem;
 
         @media only screen and(max-width: $bp-small){
             padding: 0;

@@ -365,7 +365,7 @@ body {
     display: block; }
 
 .location__feature {
-  padding: 10rem 0 12rem;
+  padding: 0 0 12rem;
   grid-column: full-start / full-end;
   background-color: #151515;
   display: grid;
@@ -380,7 +380,7 @@ body {
     grid-column: center-start / center-end;
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem; }
+    padding-top: 10rem; }
     @media only screen and (max-width: 37em) {
       .location__feature--content {
         padding: 0;
