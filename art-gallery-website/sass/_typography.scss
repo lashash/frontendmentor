@@ -6,10 +6,21 @@
         font-size: 9.6rem;
         font-family: Big Shoulders Display; 
         color: $color-white; 
-        mix-blend-mode: difference;      
-        font-size: 9.6rem;
+        mix-blend-mode: difference;        
         font-style: normal;       
-        line-height: 8.8rem;      
+        line-height: 8.8rem;
+        
+        @media only screen and(max-width: $bp-medium){
+            font-size: 7rem;
+            line-height: 6.5rem;
+            
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 5rem;
+            color: $color-black;            
+        }
+         
     }
 
     &__2{
@@ -21,6 +32,17 @@
         font-weight: 900;
         line-height: 6rem; 
         text-transform: uppercase;
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 5rem;
+            line-height: 4.5rem;
+            max-width: 22.3rem;  
+            max-height: 13.5rem;          
+        }
+
+        @media only screen and(max-width: $bp-small){
+            width: 100%;
+         }   
     }
 }
 

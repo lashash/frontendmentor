@@ -1,0 +1,43 @@
+
+
+
+.location{
+
+    &__button{
+        grid-row: 1/2;
+        grid-column: center-start / span 2;
+    }
+
+    &__container{   
+        overflow: hidden;
+        height: 100%;     
+        display: grid;
+        grid-template-columns:[full-start] minmax(16.5rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 14rem) [col-end])[center-end] minmax(16.5rem, 1fr) [full-end];
+        
+        
+        @media only screen and (max-width: 68.75em){
+
+            grid-template-columns:[full-start] minmax(3rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 14rem) [col-end])[center-end] minmax(3rem, 1fr) [full-end]; 
+        }  
+
+    }
+
+    &__image{
+        grid-row: 1/2;
+        grid-column: full-start / full-end;
+        width: 100vw;
+        
+        
+
+        &--main{
+            width: 100%;
+            display: block;
+        }
+        
+    }
+
+  
+
+   
+    
+}

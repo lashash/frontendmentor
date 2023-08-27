@@ -3,8 +3,8 @@ $color-black: rgb(21, 21, 21);
 $text-color: rgb(68, 68, 68);
 $color-white: rgb(255, 255, 255);
 
-$bp-small: 42.25em;
-$bp-medium: 56.25em;
+$bp-small: 37em;
+$bp-medium: 48.75em;
 $bp-large: 120em;
 
 
@@ -30,19 +30,34 @@ body {
     font-size: 2.2rem;
     font-weight: 300;
     color: $text-color;
-    line-height: 3.2rem;          
+    line-height: 3.2rem;
+   
+    
+    @media only screen and(max-width: $bp-medium){
+       font-size: 1.8rem;
+       line-height: 2.8rem;
+    }
 }
 
 
 
 .container{
     display: grid;
-    grid-template-columns:[full-start] minmax(3rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(3rem, 1fr) [full-end];
+    grid-template-columns:[full-start] minmax(4rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(4rem, 1fr) [full-end];
     row-gap: 18rem;
 
-    // @media only screen and(max-width: 80em){
-    //     grid-template-columns:[full-start] minmax(16.5rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 9rem) [col-end])[center-end] minmax(16.5rem, 1fr) [full-end];
-    // }
+    @media only screen and(max-width: $bp-medium){
+        grid-template-columns:[full-start] minmax(4rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 6.89rem) [col-end])[center-end] minmax(4rem, 1fr) [full-end];
+        row-gap: 12rem;
+
+    }
+
+    @media only screen and(max-width: $bp-small){
+        grid-template-columns:[full-start] minmax(1.6rem, 1fr) [center-start] repeat(10,[col-start] minmax(min-content, 5rem) [col-end])[center-end] minmax(1.6rem, 1fr) [full-end];
+        row-gap: 12rem;
+        // justify-content: center;
+        
+     }
    
 }
 
