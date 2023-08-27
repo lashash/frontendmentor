@@ -11,13 +11,15 @@
         line-height: 8.8rem;
         
         @media only screen and(max-width: $bp-medium){
+            color: $color-black;
+            mix-blend-mode: normal;  
             font-size: 7rem;
             line-height: 6.5rem;
-            
+            font-weight: 900;              
         }
 
-        @media only screen and(max-width: $bp-medium){
-            font-size: 5rem;
+        @media only screen and(max-width: $bp-small){
+            font-size: 6rem;
             color: $color-black;            
         }
          
