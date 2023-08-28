@@ -6,9 +6,180 @@
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
+  box-sizing: border-box; }
 
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 1.6rem; }
+
+.container {
+  position: relative;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex; }
+  .container__bacground--1 {
+    background-image: linear-gradient(225deg, #e942ff 0%, #8838ff 100%);
+    width: 25.8%;
+    height: 93%;
+    border-radius: 0 0 50rem 0; }
+  .container__bacground--2 {
+    opacity: 0.03;
+    position: absolute;
+    background-image: linear-gradient(225deg, #e942ff 0%, #8838ff 100%);
+    background-position: 0 100%;
+    width: 25.8%;
+    height: 93%;
+    border-radius: 0 0 50rem 0;
+    transform: rotate(180deg);
+    right: 0;
+    bottom: 0; }
+
+.header__3 {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500; }
+
+.header__text {
+  font-size: 0.8rem;
+  color: #d89eff; }
+
+.phone {
+  height: 63.125%;
+  aspect-ratio: 0.489;
+  box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.25);
+  border-radius: 3rem;
+  transform: translate(-30%, 18%);
+  border: none;
+  background-color: #F5F3F7;
+  border: 1.1rem solid #fff;
+  overflow: hidden; }
+  .phone__top {
+    background-image: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+    width: 100%;
+    height: 13%;
+    border-radius: 2rem 2rem 0.6rem 0.6rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3.5%;
+    padding: 2rem 1.55rem 0;
+    box-shadow: 0px 0px 13px 0px rgba(62, 39, 83, 0.25); }
+    .phone__top::before {
+      content: "";
+      position: absolute;
+      caret-color: white;
+      width: 56.6%;
+      height: 35%;
+      background-color: #fff;
+      border-radius: 0.6rem 0.6rem 2rem 2rem;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .phone__top--arrow {
+      display: block;
+      height: 25%;
+      color: #fff;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(0%) hue-rotate(147deg) brightness(102%) contrast(105%); }
+    .phone__top--img {
+      border-radius: 50%;
+      width: 10.5%;
+      outline: 2px solid white; }
+      .phone__top--img-dots {
+        display: block;
+        height: 30%;
+        color: #fff;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(0%) hue-rotate(147deg) brightness(102%) contrast(105%); }
+    .phone__top--text {
+      display: flex;
+      flex-direction: column;
+      margin-right: auto; }
+  .phone__chat {
+    padding: 1.1rem 0.75rem 2.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
+    .phone__chat__in {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem; }
+      .phone__chat__in--massage {
+        background-color: #EEE5F4;
+        padding: 0.6rem 0.8rem;
+        border-radius: 1rem 1rem 1rem 0.4rem;
+        max-width: 12.8rem; }
+        .phone__chat__in--massage-text {
+          color: #9241c8;
+          font-size: 0.8rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.1rem;
+          max-width: 11.2rem; }
+    .phone__chat__out {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem; }
+      .phone__chat__out--massage {
+        background-color: #fff;
+        padding: 0.6rem 0.8rem;
+        border-radius: 1rem 1rem 0.4rem 1rem;
+        max-width: 12.8rem;
+        align-self: flex-end; }
+        .phone__chat__out--massage-text {
+          color: #6e5d7e;
+          font-size: 0.8rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.1rem;
+          max-width: 11.2rem; }
+      .phone__chat__out--photo {
+        display: flex;
+        justify-content: end;
+        gap: 0.8rem;
+        overflow: hidden; }
+        .phone__chat__out--photo-img {
+          display: block;
+          width: 4rem;
+          border-radius: 1rem; }
+  .phone__price {
+    display: flex;
+    padding: 1rem 1.6rem 1rem 0.8rem;
+    background-image: linear-gradient(225deg, #e942ff 0%, #8838ff 100%);
+    gap: 0.8rem;
+    margin-top: -0.8rem;
+    box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.05);
+    border-radius: 1rem 1rem 1rem 0.4rem;
+    max-width: 16rem; }
+  .phone__checkbox {
+    width: 1.2rem; }
+    .phone__checkbox__text {
+      color: white;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.1rem; }
+    .phone__checkbox__price {
+      color: white;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.1rem; }
+  .phone__type {
+    position: relative; }
+    .phone__type--input {
+      padding: 1.31rem 0 0.98rem 1.94rem;
+      width: 21.3rem;
+      border-radius: 1.6954rem;
+      background: white;
+      border: none;
+      color: #c6cacd;
+      font-family: Rubik;
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: -0.007rem; }
+    .phone__type--svg {
+      position: absolute;
+      width: 2.5rem;
+      top: 10%;
+      left: 85%; }
