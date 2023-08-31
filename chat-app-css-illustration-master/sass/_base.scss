@@ -32,7 +32,8 @@ $very-light-magenta: hsl(289, 100%, 72%); //radio button outline
 
 html {
     box-sizing: border-box;
-    // font-size: 62.5%;       //10px/16px=62.5% -> 1rem=10px   
+    font-size: 62.5%;       //10px/16px=62.5% -> 1rem=10px  
+    // font-size: 88%; 
 }
 
 body { 
@@ -46,30 +47,27 @@ body {
     background-color: $color-white;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    
+    display: grid;
+    grid-template-columns:[full-start] minmax(30.4rem, 1fr) [center-start] 5.9rem  minmax(min-content, 69.5rem) 6rem[center-end] minmax(30.4rem, 1fr) [full-end];
+    z-index: -2;  
 
-    &__bacground--1{
-       
-        background-image: linear-gradient(225deg, $light-magenta 0%, $light-violet 100%);
-        width: 25.8%;
+    &__bacground--1{       
+        background-image: linear-gradient(225deg, $light-magenta 0%, $light-violet 100%);        
         height: 93%;
-        border-radius: 0 0 50rem 0;
+        border-radius: 0 0 50rem 0;       
+        grid-column: full-start/ span 2;       
+        grid-row: 1/2;
         }
-
     &__bacground--2{
-        opacity: 0.03;
-        position: absolute;
-        background-image: linear-gradient(225deg, $light-magenta 0%, $light-violet 100%);
-        background-position: 0 100%;
-        width: 25.8%;
+        opacity: 0.03;        
+        background-image: linear-gradient(225deg, $light-magenta 0%, $light-violet 100%);        
         height: 93%;
         border-radius: 0 0 50rem 0;
-        transform: rotate(180deg);
-        right: 0;
-        bottom: 0;
-        
-        
+        transform: rotate(180deg);        
+        grid-column: 4 / span 2;
+        grid-row: 1/2;        
+        z-index: -1;
+        align-self: end;        
     }    
     
 }

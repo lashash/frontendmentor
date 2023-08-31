@@ -1,18 +1,23 @@
-.phone{
-    // width: 17.2%;
-    // height: 63.125%;   
+
+.hero{
+    grid-column: center-start / center-end; 
+    grid-row: 1/2;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone{        
     aspect-ratio: 0.489; 
     max-width: 24.7rem;   
-    max-height: 50.5rem;
+    min-height: 50.5rem;
     box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.25);
-    border-radius: 3rem;
-    transform: translate(-30%, 18%);
-    // padding: 1.1rem 0.95rem;
+    border-radius: 3rem;    
     border: none;
     background-color: #F5F3F7;
     border: 1.1rem solid #fff;
-    overflow: hidden;
-    
+    overflow: hidden;   
 
     &__top{       
         background-image: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
@@ -90,7 +95,7 @@
                 background-color: #EEE5F4;
                 padding: 0.6rem 0.8rem;
                 border-radius: 1rem 1rem 1rem 0.4rem;
-                max-width: 12.8rem;
+                max-width: 13.8rem;
 
                 &-text{
                      color: $moderate-violet;                    
@@ -98,7 +103,7 @@
                      font-style: normal;
                      font-weight: 400;
                      line-height: 1.1rem;
-                     max-width: 11.2rem;
+                     max-width: 12.8rem;
                 }
             }
         }
@@ -173,7 +178,7 @@
             font-size: 1.2rem;
             font-style: normal;
             font-weight: 700;
-             line-height: 1.1rem;
+            line-height: 1.1rem;
 
         }
     }  
@@ -188,6 +193,7 @@
             border-radius: 1.6954rem;
             background: $color-white;
             border: none;
+            
 
             color: $grayish-blue;
             font-family: Rubik;

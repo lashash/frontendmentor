@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
 body {
   font-family: 'Rubik', sans-serif;
@@ -17,23 +18,33 @@ body {
   background-color: white;
   width: 100vw;
   height: 100vh;
-  display: flex; }
+  display: grid;
+  grid-template-columns: [full-start] minmax(30.4rem, 1fr) [center-start] 5.9rem minmax(min-content, 69.5rem) 6rem [center-end] minmax(30.4rem, 1fr) [full-end];
+  z-index: -2; }
   .container__bacground--1 {
     background-image: linear-gradient(225deg, #e942ff 0%, #8838ff 100%);
-    width: 25.8%;
     height: 93%;
-    border-radius: 0 0 50rem 0; }
+    border-radius: 0 0 50rem 0;
+    grid-column: full-start/ span 2;
+    grid-row: 1/2; }
   .container__bacground--2 {
     opacity: 0.03;
-    position: absolute;
     background-image: linear-gradient(225deg, #e942ff 0%, #8838ff 100%);
-    background-position: 0 100%;
-    width: 25.8%;
     height: 93%;
     border-radius: 0 0 50rem 0;
     transform: rotate(180deg);
-    right: 0;
-    bottom: 0; }
+    grid-column: 4 / span 2;
+    grid-row: 1/2;
+    z-index: -1;
+    align-self: end; }
+
+.header__1 {
+  color: #3E2753;
+  font-family: Rubik;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; }
 
 .header__3 {
   font-size: 1.1rem;
@@ -44,13 +55,32 @@ body {
   font-size: 0.8rem;
   color: #d89eff; }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding-left: 1rem; }
+  .text__main {
+    color: #A39DA9;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+    max-width: 44.5rem; }
+
+.hero {
+  grid-column: center-start / center-end;
+  grid-row: 1/2;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
 .phone {
   aspect-ratio: 0.489;
   max-width: 24.7rem;
-  max-height: 50.5rem;
+  min-height: 50.5rem;
   box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.25);
   border-radius: 3rem;
-  transform: translate(-30%, 18%);
   border: none;
   background-color: #F5F3F7;
   border: 1.1rem solid #fff;
@@ -109,14 +139,14 @@ body {
         background-color: #EEE5F4;
         padding: 0.6rem 0.8rem;
         border-radius: 1rem 1rem 1rem 0.4rem;
-        max-width: 12.8rem; }
+        max-width: 13.8rem; }
         .phone__chat__in--massage-text {
           color: #9241c8;
           font-size: 0.8rem;
           font-style: normal;
           font-weight: 400;
           line-height: 1.1rem;
-          max-width: 11.2rem; }
+          max-width: 12.8rem; }
     .phone__chat__out {
       display: flex;
       flex-direction: column;
