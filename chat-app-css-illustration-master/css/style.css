@@ -91,6 +91,12 @@ body {
       .text__main {
         min-width: 31.1rem;
         text-align: center; } }
+  .text__phone {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1rem;
+    max-width: 12.8rem; }
 
 .hero {
   grid-column: center-start / center-end;
@@ -170,12 +176,7 @@ body {
         border-radius: 1rem 1rem 1rem 0.4rem;
         max-width: 13.8rem; }
         .phone__chat__in--massage-text {
-          color: #9241c8;
-          font-size: 0.8rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 1.1rem;
-          max-width: 12.8rem; }
+          color: #9241c8; }
     .phone__chat__out {
       display: flex;
       flex-direction: column;
@@ -184,15 +185,9 @@ body {
         background-color: #fff;
         padding: 0.6rem 0.8rem;
         border-radius: 1rem 1rem 0.4rem 1rem;
-        max-width: 12.8rem;
         align-self: flex-end; }
         .phone__chat__out--massage-text {
-          color: #6e5d7e;
-          font-size: 0.8rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 1.1rem;
-          max-width: 11.2rem; }
+          color: #6e5d7e; }
       .phone__chat__out--photo {
         display: flex;
         justify-content: end;
@@ -214,11 +209,7 @@ body {
   .phone__checkbox {
     width: 1.2rem; }
     .phone__checkbox__text {
-      color: white;
-      font-size: 0.8rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1.1rem; }
+      color: white; }
     .phone__checkbox__price {
       color: white;
       font-size: 1.2rem;

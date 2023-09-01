@@ -1,4 +1,3 @@
-
 .hero{
     grid-column: center-start / center-end; 
     grid-row: 1/2;
@@ -6,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     @media only screen and (max-width: $bp-small){
         flex-direction: column;
         gap: 6.4rem;
@@ -35,8 +33,7 @@
         align-items: center;
         gap: 3.5%;
         padding: 2rem 1.55rem 0;
-        box-shadow: 0px 0px 13px 0px rgba(62, 39, 83, 0.25);
-     
+        box-shadow: 0px 0px 13px 0px rgba(62, 39, 83, 0.25);     
 
         &::before{
             content: "";
@@ -48,8 +45,7 @@
             border-radius: 0.6rem 0.6rem 2rem 2rem;
             top: 10%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            
+            transform: translate(-50%, -50%);            
         }
         
 
@@ -67,13 +63,11 @@
             outline: 2px solid $color-white;
 
             &-dots{
-                display: block;            
+            display: block;            
             height: 30%;            
             color: #fff;
             filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(0%) hue-rotate(147deg) brightness(102%) contrast(105%);
-
-            }
-            
+            }           
             
         }
 
@@ -103,12 +97,8 @@
                 max-width: 13.8rem;
 
                 &-text{
-                     color: $moderate-violet;                    
-                     font-size: 0.8rem;
-                     font-style: normal;
-                     font-weight: 400;
-                     line-height: 1.1rem;
-                     max-width: 12.8rem;
+                     color: $moderate-violet;                   
+                    
                 }
             }
         }
@@ -122,16 +112,10 @@
             &--massage{
                 background-color: #fff;
                 padding: 0.6rem 0.8rem;
-                border-radius: 1rem 1rem 0.4rem 1rem;
-                max-width: 12.8rem;
+                border-radius: 1rem 1rem 0.4rem 1rem;                
                 align-self: flex-end;
                 &-text{
-                    color: $dark-violet;
-                    font-size: 0.8rem;
-                     font-style: normal;
-                     font-weight: 400;
-                     line-height: 1.1rem;
-                     max-width: 11.2rem;                    
+                    color: $dark-violet;                                  
                 }
                 
             }
@@ -145,12 +129,9 @@
                 &-img{
                     display: block;
                     width: 4rem;
-                    border-radius: 1rem;
-                    
+                    border-radius: 1rem;                    
                 }
             }
-
-
         }
     }
 
@@ -162,20 +143,14 @@
         margin-top: -0.8rem;
         box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.05);
         border-radius: 1rem 1rem 1rem 0.4rem;
-        max-width: 16rem;
-
-        
+        max-width: 16rem;        
     }
 
     &__checkbox{
         width: 1.2rem;
         
         &__text{   
-            color: $color-white;                 
-            font-size: 0.8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.1rem
+            color: $color-white;          
         }
 
         &__price{
@@ -184,13 +159,11 @@
             font-style: normal;
             font-weight: 700;
             line-height: 1.1rem;
-
         }
     }  
     
     &__type{
-        position: relative;
-        
+        position: relative;        
 
         &--input{
             padding: 1.31rem 0 0.98rem 1.94rem;
@@ -198,15 +171,12 @@
             border-radius: 1.6954rem;
             background: $color-white;
             border: none;
-            
-
             color: $grayish-blue;
             font-family: Rubik;
             font-size: 0.9rem;           
             font-weight: 400;
            letter-spacing: -0.007rem;
         }
-
 
         &--svg{
             position: absolute;
