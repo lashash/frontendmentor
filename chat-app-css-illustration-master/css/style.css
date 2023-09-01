@@ -6,8 +6,13 @@
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
+  box-sizing: border-box; }
+  @media only screen and (max-width: 100em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 62.5%; } }
 
 body {
   font-family: 'Rubik', sans-serif;
@@ -19,14 +24,21 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: [full-start] minmax(30.4rem, 1fr) [center-start] 5.9rem minmax(min-content, 69.5rem) 6rem [center-end] minmax(30.4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(12rem, 1fr) [center-start] 5.9rem minmax(min-content, 69.5rem) 6rem [center-end] minmax(12rem, 1fr) [full-end];
   z-index: -2; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      grid-template-columns: [full-start] minmax(6.4rem, 1fr) [center-start] 12.2rem 12.2rem [center-end] minmax(6.4rem, 1fr) [full-end];
+      min-height: 93.6rem; } }
   .container__bacground--1 {
     background-image: linear-gradient(225deg, #e942ff 0%, #8838ff 100%);
     height: 93%;
     border-radius: 0 0 50rem 0;
     grid-column: full-start/ span 2;
     grid-row: 1/2; }
+    @media only screen and (max-width: 56.25em) {
+      .container__bacground--1 {
+        height: 50%; } }
   .container__bacground--2 {
     opacity: 0.03;
     background-image: linear-gradient(225deg, #e942ff 0%, #8838ff 100%);
@@ -37,6 +49,10 @@ body {
     grid-row: 1/2;
     z-index: -1;
     align-self: end; }
+    @media only screen and (max-width: 56.25em) {
+      .container__bacground--2 {
+        height: 50%;
+        grid-column: 3 / span 2; } }
 
 .header__1 {
   color: #3E2753;
@@ -60,12 +76,21 @@ body {
   flex-direction: column;
   gap: 2.4rem;
   padding-left: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .text {
+      max-width: 31.1rem;
+      align-items: center;
+      justify-items: center; } }
   .text__main {
     color: #A39DA9;
     font-style: normal;
     font-weight: 400;
     line-height: 2.8rem;
     max-width: 44.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .text__main {
+        min-width: 31.1rem;
+        text-align: center; } }
 
 .hero {
   grid-column: center-start / center-end;
@@ -74,11 +99,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .hero {
+      flex-direction: column;
+      gap: 6.4rem; } }
 
 .phone {
   aspect-ratio: 0.489;
-  max-width: 24.7rem;
-  min-height: 50.5rem;
+  min-width: 24.7rem;
+  max-height: 50.5rem;
   box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.25);
   border-radius: 3rem;
   border: none;

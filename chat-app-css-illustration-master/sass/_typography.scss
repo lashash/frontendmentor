@@ -28,11 +28,23 @@
     gap: 2.4rem;
     padding-left: 1rem;
 
+    @media only screen and (max-width: $bp-small){
+        max-width: 31.1rem;
+        align-items: center;
+        justify-items: center;
+     }
+
     &__main{
         color: #A39DA9;     
         font-style: normal;
         font-weight: 400;
         line-height: 2.8rem;
         max-width: 44.5rem;
+
+        @media only screen and (max-width: $bp-small){
+            min-width: 31.1rem;
+            text-align: center;
+           
+         }
     }
 }

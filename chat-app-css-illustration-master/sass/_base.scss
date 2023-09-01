@@ -17,6 +17,11 @@ $light-grayish-violet: hsl(270, 20%, 96%); //app background
 $very-dark-violet: hsl(271, 36%, 24%);     //submit button background
 $very-light-magenta: hsl(289, 100%, 72%); //radio button outline
 
+$bp-large: 125em;
+$bp-mediu: 100em;
+$bp-small: 56.25em;
+
+
 
 
 
@@ -32,12 +37,20 @@ $very-light-magenta: hsl(289, 100%, 72%); //radio button outline
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;       //10px/16px=62.5% -> 1rem=10px  
-    // font-size: 88%; 
+
+    @media only screen and (max-width: $bp-mediu){
+        font-size: 75%;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 62.5%;    //10px/16px=62.5% -> 1rem=10px 
+    }
+          
+  
 }
 
 body { 
-     
+
     font-family: 'Rubik', sans-serif;       
     font-size: 1.6rem;
 }
@@ -48,8 +61,13 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns:[full-start] minmax(30.4rem, 1fr) [center-start] 5.9rem  minmax(min-content, 69.5rem) 6rem[center-end] minmax(30.4rem, 1fr) [full-end];
-    z-index: -2;  
+    grid-template-columns:[full-start] minmax(12rem, 1fr) [center-start] 5.9rem  minmax(min-content, 69.5rem) 6rem[center-end] minmax(12rem, 1fr) [full-end];
+    z-index: -2; 
+    
+    @media only screen and (max-width: $bp-small){       
+        grid-template-columns:[full-start] minmax(6.4rem, 1fr) [center-start] 12.2rem  12.2rem[center-end] minmax(6.4rem, 1fr) [full-end];
+        min-height: 93.6rem;
+     }
 
     &__bacground--1{       
         background-image: linear-gradient(225deg, $light-magenta 0%, $light-violet 100%);        
@@ -57,6 +75,10 @@ body {
         border-radius: 0 0 50rem 0;       
         grid-column: full-start/ span 2;       
         grid-row: 1/2;
+
+        @media only screen and (max-width: $bp-small){
+           height: 50%;
+        }
         }
     &__bacground--2{
         opacity: 0.03;        
@@ -67,7 +89,12 @@ body {
         grid-column: 4 / span 2;
         grid-row: 1/2;        
         z-index: -1;
-        align-self: end;        
+        align-self: end;  
+        
+        @media only screen and (max-width: $bp-small){
+            height: 50%;
+            grid-column: 3 / span 2;
+         }
     }    
     
 }
