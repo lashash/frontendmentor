@@ -1,5 +1,8 @@
 .cta{
-    max-width: 44.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    max-width: 44.5rem;    
     &__header{
               
 
@@ -10,14 +13,14 @@
     }
 
     &__bottom{        
-        padding-top: 4rem;
+        padding-top: 1.6rem;
         display: flex;
         justify-items: start;
         align-items: center;
         gap: 4rem;
 
-
         &--text{
+            text-transform: uppercase;
             font-weight: 700;
         }
 

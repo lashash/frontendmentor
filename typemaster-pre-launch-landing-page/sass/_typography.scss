@@ -1,19 +1,19 @@
-.header{
+.header__h{
     color: $header-color;
     font-weight: 900;
     text-transform: uppercase;
     
-    &__1{
+    &--1{
         font-size: 5.6rem;
         line-height: 5.6rem;
     }
 
-    &__2{
+    &--2{
         font-size: 3.2rem;
         line-height: 3.6rem;
     }
 
-    &__3{
+    &--3{
         font-size: 2.4rem;
         line-height: 2.8rem;
     }
@@ -30,16 +30,29 @@
     border: none;
     font-style: normal;
     text-transform: uppercase;
+    cursor: pointer;
 
     &__1{
-        background-color: $text-color;
+        background-color: $color-secndary;
         color: $header-color;
+      
+
+        &:hover{
+            background-color: $header-color;
+            color: $color-white;
+        }
 
     }
 
     &__2{
         background-color: $color-primary;
         color: $color-white;
+
+        &:hover{
+            background-color: $color-primary-light;
+            color: $color-white;
+        }
+
 
     }
 
