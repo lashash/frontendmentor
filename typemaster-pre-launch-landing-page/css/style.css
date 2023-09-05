@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+  @media only screen and (max-width: 120em) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem; }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(7rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11.1rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end]; }

@@ -1,0 +1,43 @@
+$color-primary: hsl(22, 89%, 52%); 
+$color-primary-light: hsl(22, 100%, 69%); 
+$header-color: hsl(220, 50%, 17%);
+$text-color: hsl(221, 23%, 58%);
+$color-secndary: hsl(198, 28%, 93%);
+$color-white:#FFFFFF;
+
+
+
+
+
+$bp-small: 42.25em;
+$bp-medium: 56.25em;
+$bp-large: 120em;
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    
+    @media only screen and (max-width: $bp-large){
+        font-size: 62.5%; //10px/16px=62.5% -> 1rem=10px 
+    }     
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:[full-start] minmax(7rem, 1fr)[center-start] repeat(10,[col-start] minmax(min-content, 11.1rem) [col-end])[center-end] minmax(7rem, 1fr) [full-end];
+}
