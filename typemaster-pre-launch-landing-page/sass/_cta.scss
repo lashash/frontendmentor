@@ -1,0 +1,25 @@
+.cta{
+    max-width: 44.5rem;
+    &__header{
+              
+
+    }
+    &__text{
+       max-width: 40rem;
+        
+    }
+
+    &__bottom{        
+        padding-top: 4rem;
+        display: flex;
+        justify-items: start;
+        align-items: center;
+        gap: 4rem;
+
+
+        &--text{
+            font-weight: 700;
+        }
+
+    }
+}

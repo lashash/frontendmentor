@@ -1,0 +1,12 @@
+.hero{
+    grid-row: 2/3;
+    grid-column: center-start / center-end;
+    display: flex;
+    justify-content: space-between;
+
+    &__img{
+        max-width: 54rem;
+        min-height: 48rem;
+        border-radius: 2rem;
+    }
+}

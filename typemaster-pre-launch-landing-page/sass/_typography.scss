@@ -1,0 +1,55 @@
+.header{
+    color: $header-color;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+    &__1{
+        font-size: 5.6rem;
+        line-height: 5.6rem;
+    }
+
+    &__2{
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+
+    &__3{
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+}
+
+.btn{
+    font-family: Barlow;
+    width: 17.5rem;
+    height: 5.8rem;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    border: none;
+    font-style: normal;
+    text-transform: uppercase;
+
+    &__1{
+        background-color: $text-color;
+        color: $header-color;
+
+    }
+
+    &__2{
+        background-color: $color-primary;
+        color: $color-white;
+
+    }
+
+}
+
+.text{
+    &__hero{
+        font-size: 1.8rem; 
+        
+    }
+
+   
+}
